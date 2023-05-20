@@ -1,0 +1,26 @@
+.footerBlock{
+    background-color: #9f5d1e;
+    padding: 20px 0;
+}
+.footer{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.title{
+    background-color: #9ec79e;
+}
+
+.footerContacts{
+    display: flex;
+    width: 250px;
+    align-items: center;
+    justify-content: space-between;
+}
+.footerContact{
+    width: 50px;
+    height: 50px;
+    background-color: #e18282;
+}
+.rights{
+    background-color: #9ec79e;
+}

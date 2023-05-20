@@ -1,0 +1,27 @@
+@import "../../styles/sass/variables";
+@import "../../styles/sass/mixins";
+.title {
+    font-weight: 700;
+    text-transform: uppercase;
+    @include text((Oswald, sans-serif),1.8rem, 1.2, $hColor);
+    margin: 0 0 50px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        background: $hColor;
+        width: 100px;
+        height: 1px;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    .title h2 {
+        margin: 0;
+    }
+}
+
+
+
+
+

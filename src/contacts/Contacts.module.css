@@ -1,0 +1,39 @@
+.contactsBlock{
+    background-color: #bce7a1;
+    padding: 20px 0;
+}
+
+.contacts{
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.title{
+    background-color: #e18282;
+}
+.form{
+    border: 1px solid red;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+.form input, .form textarea{
+    width: 100%;
+}
+.buttonSend{
+    background-color: #6476ed;
+    color: white;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 500px){
+    .form {
+        width: 100%;
+    }
+    .buttonSend {
+        width: 80%;
+    }
+}
