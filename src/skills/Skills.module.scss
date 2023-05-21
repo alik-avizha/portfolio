@@ -1,0 +1,15 @@
+.skillsBlock{
+    background-color: #202020;
+    .skillsContainer{
+        flex-direction: column;
+        justify-content: flex-start;
+        .skills{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+}
+

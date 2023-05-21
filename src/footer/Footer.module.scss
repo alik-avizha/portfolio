@@ -1,0 +1,40 @@
+@import "../common/styles/sass/variables";
+
+.footerBlock{
+    background-color: $bgSecondColor;
+    padding: 20px 0;
+    .footer{
+        flex-direction: column;
+        justify-content: flex-start;
+        .title{
+            font-family: Oswald,sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+        }
+        .footerContacts{
+            display: flex;
+            width: 250px;
+            align-items: center;
+            justify-content: space-between;
+            .footerContact{
+                width: 30px;
+                height: 30px;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+        .rights{
+            font-size: 14px;
+            color: #ddd;
+            line-height: 1.7em;
+            font-family: Heebo,sans-serif;
+        }
+    }
+}
+
+
+
+
+

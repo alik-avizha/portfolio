@@ -1,0 +1,52 @@
+@import "../common/styles/sass/variables";
+
+.mainBlock{
+    height: 100vh;
+    background-color: $bgColor;
+    .text{
+        width: 600px;
+
+        .textGreeting{
+            font-family: Heebo,sans-serif;
+            font-size: 1.2rem;
+            color: #fff;
+        }
+        .title {
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            color: #fff;
+            font-family: Oswald,sans-serif;
+        }
+        .myJob{
+            font-family: Heebo,sans-serif;
+            font-size: 1.6rem;
+            color: #fff;
+        }
+    }
+    .photo {
+        width: 650px;
+        height: 650px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: unset;
+        background-repeat: no-repeat;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            background-color: #2a2a2a;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0.5;
+        }
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+}
+
+

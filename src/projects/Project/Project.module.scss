@@ -57,7 +57,7 @@
             text-align: center;
         }
         .description {
-            @include text((Heebo,sans-serif), 18 px, 1.7em, $textColor);
+            @include text((Heebo,sans-serif), 18px, 1.2, $textColor);
         }
     }
 }

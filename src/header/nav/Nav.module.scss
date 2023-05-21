@@ -1,0 +1,11 @@
+.nav{
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    .navigation{
+        font-family: Oswald,sans-serif;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+}

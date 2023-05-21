@@ -1,0 +1,40 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.workBlock {
+    background-color: $bgSecondColor;
+    padding: 100px 0;
+    .work {
+        flex-direction: column;
+        justify-content: center;
+
+        .linkToWorkMe {
+            text-align: center;
+
+            height: 50px;
+
+            @include text((Oswald, sans-serif), 16px, 47px, white);
+
+            border: 1px solid hsla(0, 0%, 40%, .8);
+            padding: 0 80px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 50px;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+            position: relative;
+            z-index: 1;
+            &:hover {
+                background-color: $bgColorBtn;
+                color: $colorBtn;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
