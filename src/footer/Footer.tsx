@@ -21,7 +21,6 @@ export const Footer = () => {
         backgroundImage: `url(${githubIcon})`,
     };
 
-
     return (
         <footer className={style.footerBlock}>
             <div className={`${styleContainer.container} ${style.footer}`}>
@@ -37,4 +36,3 @@ export const Footer = () => {
         </footer>
     );
 };
-//telegram , linkedin, instagram , github

@@ -1,5 +1,6 @@
 .skillsBlock{
     background-color: #202020;
+    padding: 100px 0;
     .skillsContainer{
         flex-direction: column;
         justify-content: flex-start;
@@ -9,6 +10,10 @@
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 20px;
+
+            @media screen and (max-width: 1128px) {
+                justify-content: center;
+            }
         }
     }
 }
