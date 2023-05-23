@@ -4,6 +4,7 @@
 .mainBlock{
     height: 100vh;
     background-color: $bgColor;
+
     .text{
         width: 840px;
         position: relative;
@@ -58,7 +59,7 @@
             right: 0;
             opacity: 0.5;
         }
-        @media (max-width: 1340px) {
+        @media (max-width: 1540px) {
             display: none;
         }
     }
