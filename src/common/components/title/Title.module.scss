@@ -2,7 +2,7 @@
 @import "../../styles/sass/mixins";
 .title {
     font-weight: 700;
-    @include text((Oswald, sans-serif), 24px, 1.2, $hColor);
+    @include text((Oswald, sans-serif), 20px, 1.2, $hColor);
     margin: 0 0 50px;
     position: relative;
     text-align: center;

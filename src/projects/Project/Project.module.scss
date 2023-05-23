@@ -51,13 +51,13 @@
         padding: 25px 20px;
         .projectTitle {
             font-weight: 600;
-            @include text((Oswald, sans-serif), 22px, 1.2, $hColor);
+            @include text((Oswald, sans-serif), 20px, 1.2, $hColor);
 
             margin: 0 0 10px 0;
             text-align: center;
         }
         .description {
-            @include text((Heebo,sans-serif), 18px, 1.2, $textColor);
+            @include text((Heebo,sans-serif), 16px, 1.2, $textColor);
         }
     }
 }

@@ -19,10 +19,10 @@
         font-weight: 600;
         margin-bottom: 20px;
         margin-top: 30px;
-        @include text((Oswald, sans-serif), 18px, 1.2, white);
+        @include text((Oswald, sans-serif), 16px, 1.2, white);
     }
     .description{
-        @include text((Heebo,sans-serif), 16px, 24px, #999);
+        @include text((Heebo,sans-serif), 14px, 24px, #999);
     }
 
 }

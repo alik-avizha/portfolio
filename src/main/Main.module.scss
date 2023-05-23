@@ -14,7 +14,7 @@
             text-transform: uppercase;
             letter-spacing: 8px;
             position: relative;
-            @include text((Oswald,sans-serif), 20px, 1.2, #fff);
+            @include text((Oswald,sans-serif), 18px, 1.2, #fff);
             &::after {
                 content: "";
                 position: absolute;
@@ -24,7 +24,7 @@
                 background-color: #ffa500;
             }
             @media (max-width: 767px) {
-                font-size: 1.0rem;
+                font-size: 15px;
                 &::after {
                     display: none;
                 }
@@ -34,7 +34,7 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 8px;
-            @include text((Oswald,sans-serif), 54px, 1.2, #fff);
+            @include text((Oswald,sans-serif), 44px, 1.2, #fff);
             margin: 20px 0;
             @media (max-width: 767px) {
                 font-size: 36px;
@@ -42,8 +42,8 @@
         }
     }
     .photo {
-        width: 840px;
-        height: 840px;
+        width: 540px;
+        height: 540px;
         border-radius: 50%;
         background-size: cover;
         background-position: unset;
@@ -59,17 +59,17 @@
             right: 0;
             opacity: 0.5;
         }
-        @media (max-width: 1440px) {
+        @media (max-width: 1240px) {
             display: none;
         }
     }
-    @media (max-width: 1890px) {
+    @media (max-width: 1515px) {
         .text {
             width: 100%;
         }
         .photo{
-            width: 540px;
-            height: 540px;
+            width: 440px;
+            height: 440px;
             margin: 0 auto;
         }
         text-align: center;

@@ -9,7 +9,7 @@
         justify-content: flex-start;
         .title{
             font-weight: 600;
-            @include text((Oswald,sans-serif), 24px, 1.2, #fff);
+            @include text((Oswald,sans-serif), 20px, 1.2, #fff);
 
         }
         .footerContacts{
