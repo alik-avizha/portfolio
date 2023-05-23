@@ -14,7 +14,7 @@
             text-transform: uppercase;
             letter-spacing: 8px;
             position: relative;
-            @include text((Oswald,sans-serif), 1.2rem, 1.2, #fff);
+            @include text((Oswald,sans-serif), 20px, 1.2, #fff);
             &::after {
                 content: "";
                 position: absolute;
@@ -34,16 +34,16 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 8px;
-            @include text((Oswald,sans-serif), 3.6rem, 1.2em, #fff);
+            @include text((Oswald,sans-serif), 54px, 1.2, #fff);
             margin: 20px 0;
             @media (max-width: 767px) {
-                font-size: 2.4rem;
+                font-size: 36px;
             }
         }
     }
     .photo {
-        width: 540px;
-        height: 540px;
+        width: 840px;
+        height: 840px;
         border-radius: 50%;
         background-size: cover;
         background-position: unset;
@@ -63,11 +63,13 @@
             display: none;
         }
     }
-    @media (max-width: 1564px) {
+    @media (max-width: 1890px) {
         .text {
             width: 100%;
         }
         .photo{
+            width: 540px;
+            height: 540px;
             margin: 0 auto;
         }
         text-align: center;

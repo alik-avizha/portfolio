@@ -22,7 +22,7 @@
         @include text((Oswald, sans-serif), 18px, 1.2, white);
     }
     .description{
-        @include text((Heebo,sans-serif), 1rem, 1.7em, #999);
+        @include text((Heebo,sans-serif), 16px, 24px, #999);
     }
 
 }
