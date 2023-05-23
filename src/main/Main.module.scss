@@ -42,8 +42,8 @@
         }
     }
     .photo {
-        width: 580px;
-        height: 580px;
+        width: 540px;
+        height: 540px;
         border-radius: 50%;
         background-size: cover;
         background-position: unset;
@@ -59,11 +59,11 @@
             right: 0;
             opacity: 0.5;
         }
-        @media (max-width: 1540px) {
+        @media (max-width: 1440px) {
             display: none;
         }
     }
-    @media (max-width: 1890px) {
+    @media (max-width: 1564px) {
         .text {
             width: 100%;
         }
