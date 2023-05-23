@@ -1,15 +1,32 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.973f48dc.css",
-    "main.js": "/portfolio/static/js/main.a9ab01b4.js",
+    "main.css": "/portfolio/static/css/main.22c8cf02.css",
+    "main.js": "/portfolio/static/js/main.5c9b2835.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/socialNetwork.png": "/portfolio/static/media/socialNetwork.be4e19d759d34b1de5db.png",
+    "static/media/mainImage.jpg": "/portfolio/static/media/mainImage.e763a9c3439bd9a25b97.jpg",
+    "static/media/todoList.jpeg": "/portfolio/static/media/todoList.22bd8f9e1208339345a4.jpeg",
+    "static/media/react_icon_196203.svg": "/portfolio/static/media/react_icon_196203.f9ee695f3573bd359fd5d43241cd80fd.svg",
+    "static/media/reduxIcon.svg": "/portfolio/static/media/reduxIcon.524ab15c1087c20e68b16f98ac894bb7.svg",
+    "static/media/java_script_icon_244958.svg": "/portfolio/static/media/java_script_icon_244958.d79d653f9eee9c60c9cdc73356590ddf.svg",
+    "static/media/css.svg": "/portfolio/static/media/css.d10dcdf99883fefc092803d641324770.svg",
+    "static/media/git.svg": "/portfolio/static/media/git.7da0ded5fbaf2d59066db1dfdc471993.svg",
     "index.html": "/portfolio/index.html",
-    "main.973f48dc.css.map": "/portfolio/static/css/main.973f48dc.css.map",
-    "main.a9ab01b4.js.map": "/portfolio/static/js/main.a9ab01b4.js.map",
+    "static/media/sass-svgrepo-com.svg": "/portfolio/static/media/sass-svgrepo-com.1ae53916349c8678d99a72d946fa9a69.svg",
+    "static/media/instagram.svg": "/portfolio/static/media/instagram.26ff7e8cf0db8fe4705b0ac7034e99ed.svg",
+    "static/media/storybook-svgrepo-com.svg": "/portfolio/static/media/storybook-svgrepo-com.95f83d3883656cb86d462da4659b2d97.svg",
+    "static/media/github.svg": "/portfolio/static/media/github.c95e2348afcf8ef329bc936ff830eb83.svg",
+    "static/media/typescript_icon_131914.svg": "/portfolio/static/media/typescript_icon_131914.76fe3aa58fb2c4a9b3879542611ab041.svg",
+    "static/media/test-svgrepo-com.svg": "/portfolio/static/media/test-svgrepo-com.30f597c04bfb4db26909c783dd3232a8.svg",
+    "static/media/telegram.svg": "/portfolio/static/media/telegram.cc08c6a278d4ec3562b1b1197618a965.svg",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.fb9b533b152b2313dffe7f6a369da2fa.svg",
+    "static/media/html.svg": "/portfolio/static/media/html.3a0b8a14572f372d62d50402056c54b6.svg",
+    "main.22c8cf02.css.map": "/portfolio/static/css/main.22c8cf02.css.map",
+    "main.5c9b2835.js.map": "/portfolio/static/js/main.5c9b2835.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.973f48dc.css",
-    "static/js/main.a9ab01b4.js"
+    "static/css/main.22c8cf02.css",
+    "static/js/main.5c9b2835.js"
   ]
 }
