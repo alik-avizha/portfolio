@@ -1,28 +1,43 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
 
 .mainBlock{
     height: 100vh;
     background-color: $bgColor;
     .text{
-        width: 600px;
+        width: 840px;
+        position: relative;
 
-        .textGreeting{
-            font-family: Heebo,sans-serif;
-            font-size: 1.2rem;
-            color: #fff;
-        }
         .title {
-            font-size: 1.8rem;
             font-weight: 400;
             text-transform: uppercase;
             letter-spacing: 8px;
-            color: #fff;
-            font-family: Oswald,sans-serif;
+            position: relative;
+            @include text((Oswald,sans-serif), 1.2rem, 1.2, #fff);
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                width: 70px;
+                height: 1px;
+                background-color: #ffa500;
+            }
+            @media (max-width: 767px) {
+                font-size: 1.0rem;
+                &::after {
+                    display: none;
+                }
+            }
         }
         .myJob{
-            font-family: Heebo,sans-serif;
-            font-size: 1.6rem;
-            color: #fff;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            @include text((Oswald,sans-serif), 3.6rem, 1.2em, #fff);
+            margin: 20px 0;
+            @media (max-width: 767px) {
+                font-size: 2.4rem;
+            }
         }
     }
     .photo {
@@ -43,9 +58,18 @@
             right: 0;
             opacity: 0.5;
         }
-        @media (max-width: 767px) {
+        @media (max-width: 1340px) {
             display: none;
         }
+    }
+    @media (max-width: 1890px) {
+        .text {
+            width: 100%;
+        }
+        .photo{
+            margin: 0 auto;
+        }
+        text-align: center;
     }
 }
 

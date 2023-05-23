@@ -1,11 +1,11 @@
+@import "../../common/styles/sass/mixins";
+
 .nav{
     width: 360px;
     display: flex;
     justify-content: space-between;
     margin-left: auto;
     .navigation{
-        font-family: Oswald,sans-serif;
-        font-size: 1.2rem;
-        color: #fff;
+        @include text((Oswald, sans-serif), 1.2rem, 0, #fff);
     }
 }

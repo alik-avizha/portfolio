@@ -1,4 +1,5 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
 
 .footerBlock{
     background-color: $bgSecondColor;
@@ -7,10 +8,9 @@
         flex-direction: column;
         justify-content: flex-start;
         .title{
-            font-family: Oswald,sans-serif;
-            font-size: 18px;
             font-weight: 600;
-            color: #fff;
+            @include text((Oswald,sans-serif), 24px, 1.2, #fff);
+
         }
         .footerContacts{
             display: flex;
@@ -26,10 +26,7 @@
             }
         }
         .rights{
-            font-size: 14px;
-            color: #ddd;
-            line-height: 1.7em;
-            font-family: Heebo,sans-serif;
+            @include text((Heebo,sans-serif), 14px, 1.2, #ddd);
         }
     }
 }
