@@ -28,6 +28,10 @@
                 background-color: $bgColorBtn;
                 color: $colorBtn;
             }
+            @media (max-width: 480px) {
+                background-color: $bgColorBtn;
+                color: $colorBtn;
+            }
         }
     }
 

@@ -47,7 +47,6 @@ export const Skills = () => {
         backgroundImage: `url(${gitIcon})`,
     };
 
-
     return (
         <div className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
