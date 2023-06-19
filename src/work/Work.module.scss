@@ -4,9 +4,11 @@
 .workBlock {
     background-color: $bgSecondColor;
     padding: 100px 0;
+    position: relative;
     .work {
         flex-direction: column;
         justify-content: center;
+        @include container();
 
         .linkToWorkMe {
             text-align: center;

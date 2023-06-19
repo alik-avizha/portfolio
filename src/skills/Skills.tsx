@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './Skills.module.scss'
-import styleContainer from '../common/styles/Container.module.css'
 import {Skill} from './skill/Skill';
 import {Title} from '../common/components/title/Title';
 import reactIcon from '../assets/image/react_icon_196203.svg';
@@ -48,20 +47,20 @@ export const Skills = () => {
     };
 
     return (
-        <div className={style.skillsBlock}>
-            <div className={`${styleContainer.container} ${style.skillsContainer}`}>
+        <div id='skills' className={style.skillsBlock}>
+            <div className={style.skillsContainer}>
                 <Title text={'My skills'}/>
                 <div className={style.skills}>
-                    <Skill style={js} title={'JS'} description={'Поддробное описание навыка'}/>
-                    <Skill style={css} title={'CSS'} description={'Поддробное описание навыка'}/>
-                    <Skill style={html} title={'HTML'} description={'Поддробное описание навыка'}/>
-                    <Skill style={react} title={'React'} description={'Поддробное описание навыка'}/>
-                    <Skill style={redux} title={'Redux'} description={'Поддробное описание навыка'}/>
-                    <Skill style={ts} title={'Typescript'} description={'Поддробное описание навыка'}/>
-                    <Skill style={storybook} title={'Storybook'} description={'Поддробное описание навыка'}/>
-                    <Skill style={unitTests} title={'Unit tests'} description={'Поддробное описание навыка'}/>
-                    <Skill style={scss} title={'SCSS'} description={'Поддробное описание навыка'}/>
-                    <Skill style={git} title={'Git'} description={'Поддробное описание навыка'}/>
+                    <Skill style={js} title={'JS'}/>
+                    <Skill style={css} title={'CSS'} />
+                    <Skill style={html} title={'HTML'} />
+                    <Skill style={react} title={'React'} />
+                    <Skill style={redux} title={'Redux'} />
+                    <Skill style={ts} title={'Typescript'} />
+                    <Skill style={storybook} title={'Storybook'} />
+                    <Skill style={unitTests} title={'Unit tests'} />
+                    <Skill style={scss} title={'SCSS'} />
+                    <Skill style={git} title={'Git'} />
                 </div>
             </div>
         </div>

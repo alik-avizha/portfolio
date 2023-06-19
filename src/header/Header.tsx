@@ -1,15 +1,15 @@
 import React from 'react';
 import style from './Header.module.scss'
 import {Nav} from './nav/Nav';
-import styleContainer from '../common/styles/Container.module.css'
+import {BurgerNav} from './burgerNav/BurgerNav';
 
 export const Header = () => {
     return (
         <div className={style.header}>
-            <div className={styleContainer.container}>
+            <div className={style.container}>
                 <Nav/>
+                <BurgerNav/>
             </div>
         </div>
-
     );
 };

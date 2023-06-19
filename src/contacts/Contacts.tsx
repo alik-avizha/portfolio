@@ -1,20 +1,22 @@
 import React from 'react';
 import style from './Contacts.module.scss'
-import styleContainer from '../common/styles/Container.module.css';
 import {Title} from '../common/components/title/Title';
+import {Fade} from 'react-awesome-reveal';
 
 export const Contacts = () => {
     return (
-        <div className={style.contactsBlock}>
-            <div className={`${styleContainer.container} ${style.contacts}`}>
-                <Title text={'Contacts'}/>
-                <form className={style.form}>
-                    <input placeholder={'name'} type="text"/>
-                    <input placeholder={'e-mail'} type="text"/>
-                    <textarea placeholder={'your message'} />
-                    <button type={'submit'} className={style.buttonSend}>Отправить</button>
-                </form>
-            </div>
+        <div id='contacts' className={style.contactsBlock}>
+            <Fade direction={'left'}>
+                <div className={style.container}>
+                    <Title text={'Contacts'}/>
+                    <form className={style.form}>
+                        <input placeholder={'name'} type="text"/>
+                        <input placeholder={'e-mail'} type="text"/>
+                        <textarea placeholder={'your message'}/>
+                        <button type={'submit'} className={style.buttonSend}>Отправить</button>
+                    </form>
+                </div>
+            </Fade>
         </div>
     );
 };

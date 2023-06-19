@@ -1,9 +1,13 @@
+@import "../common/styles/sass/mixins";
+
 .skillsBlock{
     background-color: #202020;
     padding: 100px 0;
+    position: relative;
     .skillsContainer{
         flex-direction: column;
         justify-content: flex-start;
+        @include container();
         .skills{
             width: 100%;
             display: flex;

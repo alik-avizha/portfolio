@@ -1,5 +1,4 @@
 import React from 'react';
-import styleContainer from '../common/styles/Container.module.css';
 import style from './Footer.module.scss'
 import telegramIcon from '../assets/image/telegram.svg';
 import linkedinIcon from '../assets/image/linkedin.svg';
@@ -23,7 +22,7 @@ export const Footer = () => {
 
     return (
         <footer className={style.footerBlock}>
-            <div className={`${styleContainer.container} ${style.footer}`}>
+            <div className={style.footer}>
                 <h3 className={style.title}>Aleksandr Avizha</h3>
                 <div className={style.footerContacts}>
                     <a href={''} style={telegram} className={style.footerContact}></a>

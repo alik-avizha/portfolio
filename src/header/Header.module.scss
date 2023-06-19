@@ -1,9 +1,18 @@
 @import "../common/styles/sass/variables.scss";
+@import "../common/styles/sass/mixins";
 
 .header{
     height: 80px;
+    padding: 0 30px;
     background-color: $bgSecondColor;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    flex-wrap: nowrap;
+    opacity: 0.9;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    right: 0;
 }

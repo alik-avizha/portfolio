@@ -3,7 +3,7 @@ import style from './Skill.module.scss'
 
 type SkillPropsType = {
     title: string
-    description: string
+    description?: string
     style? : {
         backgroundImage:string
     }

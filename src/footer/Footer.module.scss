@@ -4,13 +4,14 @@
 .footerBlock{
     background-color: $bgSecondColor;
     padding: 20px 0;
+    position: relative;
     .footer{
         flex-direction: column;
         justify-content: flex-start;
+        @include container();
         .title{
             font-weight: 600;
             @include text((Oswald,sans-serif), 20px, 1.2, #fff);
-
         }
         .footerContacts{
             display: flex;

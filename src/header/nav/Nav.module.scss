@@ -5,7 +5,17 @@
     display: flex;
     justify-content: space-between;
     margin-left: auto;
-    .navigation{
+    a {
         @include text((Oswald, sans-serif), 18px, 1.0, #fff);
+        cursor: pointer;
+        &:hover {
+           color: #ffa500;
+        }
+    }
+    .active{
+        color: #ffa500;
+    }
+    @media screen and (max-width: 400px){
+        display: none;
     }
 }

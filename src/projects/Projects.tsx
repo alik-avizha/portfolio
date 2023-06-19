@@ -1,11 +1,9 @@
 import React from 'react';
 import style from './Projects.module.scss'
-import styleContainer from '../common/styles/Container.module.css'
 import {Project} from './Project/Project';
 import {Title} from '../common/components/title/Title';
 import socialNetworkImage from '../assets/image/socialNetwork.png';
 import todoImage from '../assets/image/todoList.jpeg';
-
 
 
 export const Projects = () => {
@@ -18,8 +16,8 @@ export const Projects = () => {
     };
 
     return (
-        <div className={style.projectsBlock}>
-            <div className={`${styleContainer.container} ${style.projectsContainer}`}>
+        <div id='projects' className={style.projectsBlock}>
+            <div className={style.projectsContainer}>
                 <Title text={'My Projects'}/>
                 <div className={style.projects}>
                     <Project style={social} title={'Social network'} description={'Краткое опиание'} />
