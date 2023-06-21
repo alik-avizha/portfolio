@@ -18,10 +18,10 @@
         flex-wrap: nowrap;
         align-items: center;
         background-color: #202020;
-        transform: translate(0, -150px);
+        transform: translate(0, -200px);
         transition: .7s;
         a {
-            @include text((Oswald, sans-serif), 18px, 1.0, #fff);
+            @include text((Oswald, sans-serif), 30px, 1.0, #fff);
             cursor: pointer;
             &:hover {
                 color: #ffa500;
@@ -33,14 +33,14 @@
     }
     .show{
         transform: translate(0, 0);
-        height: 150px;
+        height: 200px;
     }
     .burgerBtn{
         width: 30px;
         height: 30px;
         position: absolute;
-        top: 24px;
-        right: 24px;
+        top: 22px;
+        right: 30px;
     }
     @media screen and (min-width: 400px){
         display: none;
