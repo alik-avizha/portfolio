@@ -4,7 +4,7 @@
 .header{
     height: 80px;
     padding: 0 30px;
-    background-color: $bgSecondColor;
+    /*background-color: $bgSecondColor;*/
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -15,4 +15,7 @@
     z-index: 9999;
     left: 0;
     right: 0;
+}
+.scrolled {
+    background-color: $bgSecondColor;
 }

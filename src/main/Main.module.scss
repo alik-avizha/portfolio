@@ -48,7 +48,7 @@
                 @include text((Oswald,sans-serif), 44px, 1.2, #fff);
                 margin: 20px 0;
                 @media (max-width: 767px) {
-                    font-size: 36px;
+                    font-size: 32px;
                 }
             }
         }
@@ -70,7 +70,7 @@
                 right: 0;
                 opacity: 0.5;
             }
-            @media (max-width: 1240px) {
+            @media (max-width: 540px) {
                 display: none;
             }
         }
@@ -83,7 +83,9 @@
                 height: 440px;
                 margin: 0 auto;
             }
+            justify-content: center;
             text-align: center;
+            align-items: center;
         }
     }
 }
