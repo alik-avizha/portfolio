@@ -23,7 +23,6 @@ export const Footer = () => {
     return (
         <footer className={style.footerBlock}>
             <div className={style.footer}>
-
                 <h3 className={style.title}>Aleksandr Avizha</h3>
                 <div className={style.footerContacts}>
                     <a href={''} style={telegram} className={style.footerContact}></a>
