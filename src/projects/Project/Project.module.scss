@@ -7,10 +7,10 @@
     width: 500px;
     background-color: #333;
     .imageBackground {
-        height: 460px;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 460px;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -42,11 +42,11 @@
             position: relative;
             z-index: 1;
             &:hover {
-                background-color: $bgColorBtn;
+                background-color: $Default;
                 color: $colorBtn;
             }
             @media (max-width: 480px) {
-                background-color: $bgColorBtn;
+                background-color: $Default;
                 color: $colorBtn;
                 }
         }

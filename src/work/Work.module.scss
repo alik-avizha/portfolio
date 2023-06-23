@@ -3,7 +3,7 @@
 
 .workBlock {
     background-color: $bgSecondColor;
-    padding: 100px 0;
+    padding: 0 0 100px 0;
     position: relative;
     .work {
         flex-direction: column;
@@ -27,11 +27,11 @@
             position: relative;
             z-index: 1;
             &:hover {
-                background-color: $bgColorBtn;
+                background-color: $Default;
                 color: $colorBtn;
             }
             @media (max-width: 480px) {
-                background-color: $bgColorBtn;
+                background-color: $Default;
                 color: $colorBtn;
             }
         }

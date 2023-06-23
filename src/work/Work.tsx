@@ -1,6 +1,8 @@
 import React from 'react';
 import style from './Work.module.scss'
 import {Title} from '../common/components/title/Title';
+import {SvgComponent} from '../common/components/SvgComponent/SvgComponents';
+import {Link} from 'react-scroll';
 
 
 const Work = () => {
@@ -8,10 +10,10 @@ const Work = () => {
         <div className={style.workBlock}>
             <div className={style.work}>
                 <Title text={'Considering remote work'}/>
-                <a href={''} className={style.linkToWorkMe}>Нанять меня</a>
+                <Link to="contacts" className={style.linkToWorkMe} spy={true} smooth={true} offset={-70} duration={500}>Нанять меня</Link>
             </div>
+            <SvgComponent fill={'2a2a2a'}/>
         </div>
-
     );
 };
 

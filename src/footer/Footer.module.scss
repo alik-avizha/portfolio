@@ -3,7 +3,7 @@
 
 .footerBlock{
     background-color: $bgSecondColor;
-    padding: 20px 0;
+    padding: 0 0 20px 0;
     position: relative;
     .footer{
         flex-direction: column;
@@ -26,7 +26,7 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 &:hover {
-                    background-color: #ffa500;
+                    background-color: $Default;
                 }
 
             }

@@ -1,0 +1,21 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+
+.myContactsItem {
+  .contactsTitleInfo {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .contactsDescInfo {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+  }
+}
+
+

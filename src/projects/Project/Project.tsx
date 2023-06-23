@@ -11,8 +11,6 @@ type ProjectPropsType = {
 
 export const Project = (props: ProjectPropsType) => {
 
-
-
     return (
         <div className={style.project}>
             <div className={style.imageBackground} style={props.style}>

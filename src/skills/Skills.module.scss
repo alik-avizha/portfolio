@@ -1,8 +1,9 @@
 @import "../common/styles/sass/mixins";
+@import "../common/styles/sass/variables";
 
 .skillsBlock{
-    background-color: #202020;
-    padding: 100px 0;
+    background-color: $bgSecondColor;
+    padding: 0 0 100px 0;
     position: relative;
     .skillsContainer{
         flex-direction: column;

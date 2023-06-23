@@ -4,6 +4,7 @@ import {Project} from './Project/Project';
 import {Title} from '../common/components/title/Title';
 import socialNetworkImage from '../assets/image/socialNetwork.png';
 import todoImage from '../assets/image/todoList.jpeg';
+import {SvgComponent} from '../common/components/SvgComponent/SvgComponents';
 
 
 export const Projects = () => {
@@ -16,14 +17,15 @@ export const Projects = () => {
     };
 
     return (
-        <div id='projects' className={style.projectsBlock}>
+        <div id="projects" className={style.projectsBlock}>
             <div className={style.projectsContainer}>
                 <Title text={'My Projects'}/>
                 <div className={style.projects}>
-                    <Project style={social} title={'Social network'} description={'Краткое опиание'} />
-                    <Project style={todo} title={'Todo list'} description={'Краткое опиание'} />
+                    <Project style={social} title={'Social network'} description={'Краткое опиание'}/>
+                    <Project style={todo} title={'Todo list'} description={'Краткое опиание'}/>
                 </div>
             </div>
+            <SvgComponent fill={'202020FF'}/>
         </div>
     );
 };

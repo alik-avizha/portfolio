@@ -12,57 +12,36 @@ import sbIcon from '../assets/image/storybook-svgrepo-com.svg';
 import utIcon from '../assets/image/test-svgrepo-com.svg';
 import scssIcon from '../assets/image/sass-svgrepo-com.svg';
 import gitIcon from '../assets/image/git.svg';
+import {SvgComponent} from '../common/components/SvgComponent/SvgComponents';
 
 export const Skills = () => {
 
-    const react = {
-        backgroundImage: `url(${reactIcon})`,
-    };
-    const redux = {
-        backgroundImage: `url(${reduxIcon})`,
-    };
-    const ts = {
-        backgroundImage: `url(${tsIcon})`,
-    };
-    const js = {
-        backgroundImage: `url(${jsIcon})`,
-    };
-    const css = {
-        backgroundImage: `url(${cssIcon})`,
-    };
-    const html = {
-        backgroundImage: `url(${htmlIcon})`,
-    };
-    const storybook = {
-        backgroundImage: `url(${sbIcon})`,
-    };
-    const unitTests = {
-        backgroundImage: `url(${utIcon})`,
-    };
-    const scss = {
-        backgroundImage: `url(${scssIcon})`,
-    };
-    const git = {
-        backgroundImage: `url(${gitIcon})`,
-    };
+    const skills = [
+        {title: 'React', style: {backgroundImage: `url(${reactIcon})`},description: 'Hooks, Class components, React-router-dom v6'},
+        {title: 'Redux', style: {backgroundImage: `url(${reduxIcon})`},description: 'Reducers, Thunks, Store Structure, Redux Toolkit'},
+        {title: 'Typescript', style: {backgroundImage: `url(${tsIcon})`},description: 'Primitive types, Objects, Generics, Union types'},
+        {title: 'JS', style: {backgroundImage: `url(${jsIcon})`}, description: 'Promises, Eventloop, this, Closures, Recursion, Prototypes, Scope'},
+        {title: 'Storybook', style: {backgroundImage: `url(${sbIcon})`},description: 'Decorators, Addons, Stories'},
+        {title: 'Unit tests', style: {backgroundImage: `url(${utIcon})`},description: 'TDD, Jest unit/snapshot integration testing'},
+        {title: 'SCSS', style: {backgroundImage: `url(${scssIcon})`},description: 'Responsive & adaptive design. Flexbox, grid, positioning'},
+        {title: 'HTML', style: {backgroundImage: `url(${htmlIcon})`},description: 'Semantics, Layout, Styling, Responsive'},
+        {title: 'CSS', style: {backgroundImage: `url(${cssIcon})`},description: 'Responsive & adaptive design. Flexbox, grid, positioning'},
+        {title: 'Git', style: {backgroundImage: `url(${gitIcon})`},description: 'Semantic commits, all basic operations & resolving merge conflicts'},
+    ]
 
     return (
         <div id='skills' className={style.skillsBlock}>
             <div className={style.skillsContainer}>
                 <Title text={'My skills'}/>
                 <div className={style.skills}>
-                    <Skill style={js} title={'JS'}/>
-                    <Skill style={css} title={'CSS'} />
-                    <Skill style={html} title={'HTML'} />
-                    <Skill style={react} title={'React'} />
-                    <Skill style={redux} title={'Redux'} />
-                    <Skill style={ts} title={'Typescript'} />
-                    <Skill style={storybook} title={'Storybook'} />
-                    <Skill style={unitTests} title={'Unit tests'} />
-                    <Skill style={scss} title={'SCSS'} />
-                    <Skill style={git} title={'Git'} />
+                    {skills.map((item, index) => {
+                        return (
+                            <Skill key={index} style={item.style} title={item.title} description={item.description}/>
+                        )
+                    })}
                 </div>
             </div>
+            <SvgComponent fill={'2a2a2a'}/>
         </div>
     );
 };

@@ -2,16 +2,15 @@
 @import "../common/styles/sass/mixins";
 
 .header{
-    height: 80px;
-    padding: 0 30px;
-    /*background-color: $bgSecondColor;*/
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     flex-wrap: nowrap;
-    opacity: 0.9;
+    height: 80px;
+    padding: 0 30px;
     position: fixed;
+    opacity: 0.9;
     z-index: 9999;
     left: 0;
     right: 0;
