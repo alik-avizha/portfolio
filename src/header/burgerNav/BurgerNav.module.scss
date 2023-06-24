@@ -1,7 +1,7 @@
 @import "../../common/styles/sass/mixins";
 @import "../../common/styles/sass/variables";
 
-.burgerNav{
+.burgerNav {
     width: 100%;
     height: 100%;
 
@@ -19,30 +19,30 @@
         padding: 20px;
         background-color: $bgSecondColor;
         transform: translate(0, -200px);
-        transition: .7s;
+        transition: 0.7s;
         a {
-            @include text((Oswald, sans-serif), 30px, 1.0, #fff);
+            @include text((Oswald, sans-serif), 30px, 1, #fff);
             cursor: pointer;
             &:hover {
                 color: $Default;
             }
         }
-        .active{
+        .active {
             color: $Default;
         }
     }
-    .show{
+    .show {
         transform: translate(0, 0);
         height: 200px;
     }
-    .burgerBtn{
+    .burgerBtn {
         width: 30px;
         height: 30px;
         position: absolute;
         top: 22px;
         right: 30px;
     }
-    @media screen and (min-width: 400px){
+    @media screen and (min-width: 400px) {
         display: none;
     }
 }

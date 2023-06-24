@@ -1,7 +1,7 @@
-import React, {useCallback} from 'react';
-import {loadFull} from 'tsparticles';
-import {Engine} from 'tsparticles-engine';
-import Particles from 'react-tsparticles';
+import React, { useCallback } from "react";
+import { loadFull } from "tsparticles";
+import { Engine } from "tsparticles-engine";
+import Particles from "react-tsparticles";
 
 export const ParticlesWrapper = () => {
     const particlesInit = useCallback(async (engine: Engine) => {
@@ -26,10 +26,10 @@ export const ParticlesWrapper = () => {
                 },
                 particles: {
                     color: {
-                        value: '#ffa500',
+                        value: "#ffa500",
                     },
                     links: {
-                        color: '#ffffff',
+                        color: "#ffffff",
                         distance: 150,
                         enable: true,
                         opacity: 0.3,
@@ -39,10 +39,10 @@ export const ParticlesWrapper = () => {
                         enable: true,
                     },
                     move: {
-                        direction: 'none',
+                        direction: "none",
                         enable: true,
                         outModes: {
-                            default: 'bounce',
+                            default: "bounce",
                         },
                         random: false,
                         speed: 1,
@@ -59,10 +59,10 @@ export const ParticlesWrapper = () => {
                         value: 0.1,
                     },
                     shape: {
-                        type: 'circle',
+                        type: "circle",
                     },
                     size: {
-                        value: {min: 1, max: 5},
+                        value: { min: 1, max: 5 },
                     },
                 },
                 detectRetina: true,

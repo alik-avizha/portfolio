@@ -6,6 +6,7 @@
     height: 50vh;
     padding: 0 0 100px 0;
     position: relative;
+
     .work {
         flex-direction: column;
         justify-content: center;
@@ -18,30 +19,25 @@
 
             @include text((Oswald, sans-serif), 16px, 47px, white);
 
-            border: 1px solid hsla(0, 0%, 40%, .8);
+            border: 1px solid hsla(0, 0%, 40%, 0.8);
             padding: 0 80px;
             text-transform: uppercase;
             letter-spacing: 1px;
             border-radius: 50px;
-            -webkit-transition: all .3s;
-            transition: all .3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
             position: relative;
             z-index: 1;
+
             &:hover {
                 background-color: $Default;
                 color: $colorBtn;
             }
+
             @media (max-width: 480px) {
                 background-color: $Default;
                 color: $colorBtn;
             }
         }
     }
-
 }
-
-
-
-
-
-

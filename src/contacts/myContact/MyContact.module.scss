@@ -1,18 +1,15 @@
 @import "../../common/styles/sass/variables";
 @import "../../common/styles/sass/mixins";
 
-
 .myContactsItem {
-  .contactsTitleInfo {
-    margin: 0 0 6px 0;
-    font-weight: 400;
-    @include text((Oswald, sans-serif), 20px, 1.2, #fff);
-  }
+    .contactsTitleInfo {
+        margin: 0 0 6px 0;
+        font-weight: 400;
+        @include text((Oswald, sans-serif), 20px, 1.2, #fff);
+    }
 
-  .contactsDescInfo {
-    font-weight: 400;
-    @include text((Heebo,sans-serif), 12px, 1, #fff);
-  }
+    .contactsDescInfo {
+        font-weight: 400;
+        @include text((Heebo, sans-serif), 12px, 1, #fff);
+    }
 }
-
-

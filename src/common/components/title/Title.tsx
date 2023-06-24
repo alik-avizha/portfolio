@@ -1,9 +1,9 @@
-import React from 'react';
-import style from './Title.module.scss'
+import React from "react";
+import style from "./Title.module.scss";
 
 type TitlePropsType = {
-    text: string
-}
+    text: string;
+};
 
 export const Title = (props: TitlePropsType) => {
     return (

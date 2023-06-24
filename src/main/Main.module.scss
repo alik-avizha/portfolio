@@ -1,25 +1,25 @@
 @import "../common/styles/sass/variables";
 @import "../common/styles/sass/mixins";
 
-.mainBlock{
+.mainBlock {
     position: relative;
     height: 100vh;
     padding-top: 80px;
     padding-bottom: 40px;
     background-color: $bgColor;
-    .container{
+    .container {
         @include container();
         position: relative;
         .particleWrapper {
             position: absolute;
-            top:0;
-            left:0;
-            right:0;
+            top: 0;
+            left: 0;
+            right: 0;
             bottom: 0;
             width: 100%;
             height: 100%;
         }
-        .text{
+        .text {
             width: 670px;
             position: relative;
             .title {
@@ -27,7 +27,7 @@
                 text-transform: uppercase;
                 letter-spacing: 8px;
                 position: relative;
-                @include text((Oswald,sans-serif), 18px, 1.2, #fff);
+                @include text((Oswald, sans-serif), 18px, 1.2, #fff);
                 &::after {
                     content: "";
                     position: absolute;
@@ -43,11 +43,11 @@
                     }
                 }
             }
-            .myJob{
+            .myJob {
                 font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 8px;
-                @include text((Oswald,sans-serif), 44px, 1.2, #fff);
+                @include text((Oswald, sans-serif), 44px, 1.2, #fff);
                 margin: 20px 0;
                 @media (max-width: 767px) {
                     font-size: 32px;
@@ -62,7 +62,7 @@
             background-repeat: no-repeat;
             &::before {
                 position: absolute;
-                content: '';
+                content: "";
                 height: 106%;
                 width: 100%;
                 border: 5px solid $Default;
@@ -78,16 +78,9 @@
             .text {
                 width: 100%;
             }
-            /*.photo{
-                width: 260px;
-                height: 360px;
-                margin: 0 auto;
-            }*/
             justify-content: center;
             text-align: center;
             align-items: center;
         }
     }
 }
-
-

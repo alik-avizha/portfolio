@@ -1,22 +1,22 @@
 @import "../../common/styles/sass/mixins";
 @import "../../common/styles/sass/variables";
 
-.nav{
+.nav {
     display: flex;
     justify-content: space-between;
     width: 300px;
     margin-left: auto;
     a {
-        @include text((Oswald, sans-serif), 18px, 1.0, #fff);
+        @include text((Oswald, sans-serif), 18px, 1, #fff);
         cursor: pointer;
         &:hover {
-           color: $Default;
+            color: $Default;
         }
     }
-    .active{
+    .active {
         color: $Default;
     }
-    @media screen and (max-width: 400px){
+    @media screen and (max-width: 400px) {
         display: none;
     }
 }

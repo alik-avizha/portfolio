@@ -90,12 +90,12 @@
         background-position: center;
         background-repeat: no-repeat;
         position: relative;
-        transition: background-color .3s linear, transform .3s linear;
+        transition: background-color 0.3s linear, transform 0.3s linear;
         &:hover {
             transform: scale(1.1);
         }
         &::before {
-            content: '';
+            content: "";
             position: absolute;
             left: 0;
             top: 0;
@@ -103,7 +103,7 @@
             height: 100%;
             background: orange;
             opacity: 0;
-            transition: opacity .2s linear;
+            transition: opacity 0.2s linear;
         }
         &:hover::before {
             opacity: 0.4;
@@ -122,23 +122,13 @@
             font-weight: 600;
             @include text((Oswald, sans-serif), 20px, 1.2, $hColor);
             cursor: pointer;
-            transition: color .2s linear;
+            transition: color 0.2s linear;
             &:hover {
                 color: orange;
             }
         }
         .category {
-            @include text((Heebo,sans-serif), 16px, 1.2, $textColor);
+            @include text((Heebo, sans-serif), 16px, 1.2, $textColor);
         }
     }
 }
-
-
-
-
-
-
-
-
-
-

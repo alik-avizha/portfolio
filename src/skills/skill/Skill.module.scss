@@ -1,6 +1,6 @@
 @import "../../common/styles/sass/mixins";
 
-.skill{
+.skill {
     width: 200px;
     background-color: rgba(34, 34, 34, 0.35);
     display: flex;
@@ -33,7 +33,7 @@
             border-radius: 50%;
             background-color: #666;
             animation: move 2.5s linear infinite;
-            offset-path: path('M 50,50 m -50,0 a 50,50 0 1,0 100,0 a 50,50 0 1,0 -100,0');
+            offset-path: path("M 50,50 m -50,0 a 50,50 0 1,0 100,0 a 50,50 0 1,0 -100,0");
             animation-play-state: paused;
         }
         &:hover .circle {
@@ -46,14 +46,13 @@
             transform: rotate(360deg);
         }
     }
-    .title{
+    .title {
         font-weight: 600;
         margin-top: 20px;
         margin-bottom: 10px;
         @include text((Oswald, sans-serif), 16px, 1.2, white);
     }
-    .description{
-        @include text((Heebo,sans-serif), 14px, 24px, #999);
+    .description {
+        @include text((Heebo, sans-serif), 14px, 24px, #999);
     }
 }
-

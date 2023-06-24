@@ -1,10 +1,10 @@
-import React from 'react';
-import style from './MyContact.module.scss';
+import React from "react";
+import style from "./MyContact.module.scss";
 
 type MyContactPropsType = {
-    title: string
-    info: string
-}
+    title: string;
+    info: string;
+};
 
 export const MyContact = (props: MyContactPropsType) => {
     return (

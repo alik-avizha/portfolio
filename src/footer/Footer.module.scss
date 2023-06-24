@@ -1,43 +1,43 @@
 @import "../common/styles/sass/variables";
 @import "../common/styles/sass/mixins";
 
-.footerBlock{
+.footerBlock {
     background-color: $bgSecondColor;
     padding: 0 0 20px 0;
     position: relative;
-    .footer{
+
+    .footer {
         flex-direction: column;
         justify-content: flex-start;
         @include container();
-        .title{
+
+        .title {
             font-weight: 600;
-            @include text((Oswald,sans-serif), 20px, 1.2, #fff);
+            @include text((Oswald, sans-serif), 20px, 1.2, #fff);
         }
-        .footerContacts{
+
+        .footerContacts {
             display: flex;
             width: 250px;
             align-items: center;
             justify-content: space-between;
-            .footerContact{
+
+            .footerContact {
                 width: 40px;
                 height: 40px;
                 border-radius: 50%;
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
+
                 &:hover {
                     background-color: $Default;
                 }
-
             }
         }
-        .rights{
-            @include text((Heebo,sans-serif), 14px, 1.2, #ddd);
+
+        .rights {
+            @include text((Heebo, sans-serif), 14px, 1.2, #ddd);
         }
     }
 }
-
-
-
-
-

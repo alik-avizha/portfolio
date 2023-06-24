@@ -1,9 +1,9 @@
-import React from 'react';
-import style from './SvgItem.module.scss';
+import React from "react";
+import style from "./SvgItem.module.scss";
 
 type SvgComponentPropsType = {
-    fill: string
-}
+    fill: string;
+};
 
 export const SvgComponent = (props: SvgComponentPropsType) => {
     return (
