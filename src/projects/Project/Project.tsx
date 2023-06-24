@@ -6,23 +6,28 @@ type ProjectPropsType = {
     description: string
     style: {
         backgroundImage:string
-    }
+    },
+    ghPages: string,
+    url:string
 }
 
 export const Project = (props: ProjectPropsType) => {
-
     return (
         <div className={style.project}>
-            <div className={style.imageBackground} style={props.style}>
-                <a href={''} className={style.linkToProject}>Смотреть</a>
+            <div className={style.imgWrapper}>
+                <a  href={`${props.ghPages}`}
+                    className={style.logo}
+                    style={props.style}
+                    target="_blank"
+                    rel="noreferrer">
+                </a>
             </div>
-            <div className={style.projectInfo}>
-                <h3 className={style.projectTitle}>{props.title}</h3>
-                <span className={style.description}>
-                    {props.description}
-            </span>
+            <div className={style.description}>
+                <a href={props.url} className={style.name} target="_blank" rel="noreferrer">
+                    {props.title}
+                </a>
+                <span className={style.category}>{props.description}</span>
             </div>
-
         </div>
     );
 };

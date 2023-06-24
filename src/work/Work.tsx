@@ -10,7 +10,7 @@ const Work = () => {
         <div className={style.workBlock}>
             <div className={style.work}>
                 <Title text={'Considering remote work'}/>
-                <Link to="contacts" className={style.linkToWorkMe} spy={true} smooth={true} offset={-70} duration={500}>Нанять меня</Link>
+                <Link to="contacts" className={style.linkToWorkMe} spy={true} smooth={true} offset={-70} duration={500}>Hire me</Link>
             </div>
             <SvgComponent fill={'2a2a2a'}/>
         </div>

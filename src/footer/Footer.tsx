@@ -7,28 +7,31 @@ import githubIcon from '../assets/image/github.svg';
 
 export const Footer = () => {
 
-    const telegram = {
-        backgroundImage: `url(${telegramIcon})`,
-    };
-    const linkedin = {
-        backgroundImage: `url(${linkedinIcon})`,
-    };
-    const instagram = {
-        backgroundImage: `url(${instagramIcon})`,
-    };
-    const github = {
-        backgroundImage: `url(${githubIcon})`,
-    };
+    const contacts = [
+        {contactStyle: {backgroundImage: `url(${telegramIcon})`}, url: 'https://t.me/+375336139895'},
+        {contactStyle: {backgroundImage: `url(${linkedinIcon})`}, url: 'https://www.linkedin.com/in/aleksandr-avizha'},
+        {contactStyle: {backgroundImage: `url(${instagramIcon})`}, url: 'https://www.instagram.com/alik.avi'},
+        {contactStyle: {backgroundImage: `url(${githubIcon})`}, url: 'https://github.com/alik-avizha'},
+    ]
 
     return (
         <footer className={style.footerBlock}>
             <div className={style.footer}>
                 <h3 className={style.title}>Aleksandr Avizha</h3>
                 <div className={style.footerContacts}>
-                    <a href={''} style={telegram} className={style.footerContact}></a>
-                    <a href={''} style={linkedin} className={style.footerContact}></a>
-                    <a href={''} style={instagram} className={style.footerContact}></a>
-                    <a href={''} style={github} className={style.footerContact}></a>
+                    {contacts.map((el, index) => {
+                        return (
+                            <a
+                                key={index}
+                                href={el.url}
+                                style={el.contactStyle}
+                                className={style.footerContact}
+                                target="_blank"
+                                rel="noreferrer">
+
+                            </a>
+                        )
+                    })}
                 </div>
                 <h3 className={style.rights}>@2023 All rights reserved</h3>
             </div>

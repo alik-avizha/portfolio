@@ -4,17 +4,14 @@
 
 .myContactsItem {
   .contactsTitleInfo {
-    margin: 0;
-    font-size: 16px;
+    margin: 0 0 6px 0;
     font-weight: 400;
-    color: #fff;
+    @include text((Oswald, sans-serif), 20px, 1.2, #fff);
   }
 
   .contactsDescInfo {
-    margin-bottom: 10px;
-    font-size: 12px;
     font-weight: 400;
-    color: #fff;
+    @include text((Heebo,sans-serif), 12px, 1, #fff);
   }
 }
 

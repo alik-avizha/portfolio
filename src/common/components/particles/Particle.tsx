@@ -26,7 +26,7 @@ export const ParticlesWrapper = () => {
                 },
                 particles: {
                     color: {
-                        value: '#ffffff',
+                        value: '#ffa500',
                     },
                     links: {
                         color: '#ffffff',

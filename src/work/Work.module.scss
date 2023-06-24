@@ -3,6 +3,7 @@
 
 .workBlock {
     background-color: $bgSecondColor;
+    height: 50vh;
     padding: 0 0 100px 0;
     position: relative;
     .work {
@@ -12,7 +13,7 @@
 
         .linkToWorkMe {
             text-align: center;
-
+            cursor: pointer;
             height: 50px;
 
             @include text((Oswald, sans-serif), 16px, 47px, white);

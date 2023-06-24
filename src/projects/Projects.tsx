@@ -9,20 +9,40 @@ import {SvgComponent} from '../common/components/SvgComponent/SvgComponents';
 
 export const Projects = () => {
 
-    const social = {
-        backgroundImage: `url(${socialNetworkImage})`,
-    };
-    const todo = {
-        backgroundImage: `url(${todoImage}`,
-    };
+    const projects = [
+        {
+            name: 'Social network',
+            description: 'Flux patterns; React/Redux/TS, Class and Func components',
+            ghPages: 'Тут будет ссылка',
+            url: 'https://github.com/alik-avizha/my_social_network',
+            projectStyle: {backgroundImage: `url(${socialNetworkImage})`}
+        },
+        {
+            name: 'Todo list',
+            description: 'SPA – React/Redux-toolkit/TS. Storybook, hooks, HOCs, REST API, axios. Unit, integration tests',
+            ghPages: 'Тут будет ссылка',
+            url: 'https://github.com/alik-avizha/Happy-Life-Checklist',
+            projectStyle: {backgroundImage: `url(${todoImage})`}
+        },
+
+    ]
 
     return (
         <div id="projects" className={style.projectsBlock}>
             <div className={style.projectsContainer}>
                 <Title text={'My Projects'}/>
                 <div className={style.projects}>
-                    <Project style={social} title={'Social network'} description={'Краткое опиание'}/>
-                    <Project style={todo} title={'Todo list'} description={'Краткое опиание'}/>
+                    {projects.map((el, index) => {
+                        return (
+                            <Project key={index}
+                                     style={el.projectStyle}
+                                     title={el.name}
+                                     description={el.description}
+                                     ghPages={el.ghPages}
+                                     url={el.url}
+                            />
+                        )
+                    })}
                 </div>
             </div>
             <SvgComponent fill={'202020FF'}/>
