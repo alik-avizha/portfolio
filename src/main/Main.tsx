@@ -24,11 +24,9 @@ export const Main = () => {
                         <ReactTypingEffect text={["Frontend Developer"]} className={style.myJob} />
                     </Fade>
                 </div>
-                <Fade direction={"top-right"}>
-                    <Tilt options={{ max: 25 }}>
-                        <div style={photo} className={style.photo}></div>
-                    </Tilt>
-                </Fade>
+                <Tilt options={{ max: 25 }}>
+                    <div style={photo} className={style.photo}></div>
+                </Tilt>
             </div>
             <SvgComponent fill={"202020FF"} />
         </div>
