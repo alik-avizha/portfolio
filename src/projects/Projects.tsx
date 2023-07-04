@@ -11,7 +11,7 @@ export const Projects = () => {
         {
             name: "Social network",
             description: "Flux patterns; React/Redux/TS, Class and Func components",
-            ghPages: "Тут будет ссылка",
+            ghPages: "https://alik-avizha.github.io/my_social_network",
             url: "https://github.com/alik-avizha/my_social_network",
             projectStyle: { backgroundImage: `url(${socialNetworkImage})` },
         },
