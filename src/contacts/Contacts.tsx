@@ -6,6 +6,7 @@ import { SvgComponent } from "../common/components/SvgComponent/SvgComponents";
 import { MyContact } from "./myContact/MyContact";
 import { SubmitHandler, useForm } from "react-hook-form";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 export const Contacts = () => {
     const {
@@ -16,7 +17,14 @@ export const Contacts = () => {
     } = useForm<FormDataType>({ mode: "onTouched" });
 
     const onSubmit: SubmitHandler<FormDataType> = (data) => {
-        axios.post("https://node-js-gmail.vercel.app/sendMessage", data);
+        axios
+            .post("https://node-js-gmail.vercel.app/sendMessage", data)
+            .then(() => {
+                toast.success("Thank you for your letter!");
+            })
+            .catch(() => {
+                toast.error("Sorry, there's been an error");
+            });
         reset();
     };
 
