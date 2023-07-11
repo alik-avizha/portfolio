@@ -55,11 +55,14 @@
                     color: #fff;
                     height: 110px;
                     padding: 6px 15px;
-                    margin: 0 0 10px;
                     resize: vertical;
                     &:focus {
                         background: rgba(157, 151, 151, 0.5);
                     }
+                }
+                .errors {
+                    color: #ef5555;
+                    margin-top: -5px;
                 }
                 .buttonSend {
                     text-align: center;
