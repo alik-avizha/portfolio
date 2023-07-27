@@ -16,11 +16,11 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
-            gap: 40px;
+            gap: 60px;
             flex-wrap: wrap;
             align-items: flex-start;
 
-            @media screen and (max-width: 1252px) {
+            @media screen and (max-width: 1445px) {
                 justify-content: center;
             }
         }

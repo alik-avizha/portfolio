@@ -2,9 +2,13 @@
 @import "../../common/styles/sass/mixins";
 
 .project {
-    max-width: 500px;
+    max-width: 540px;
     width: 100%;
     text-align: center;
+
+    @media screen and (max-width: 1445px) {
+        max-width: 640px;
+    }
 
     .imgWrapper {
         display: flex;

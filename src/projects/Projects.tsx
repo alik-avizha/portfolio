@@ -6,12 +6,13 @@ import socialNetworkImage from "../assets/image/socialNetwork.png";
 import todoImage from "../assets/image/todoList.jpeg";
 import { SvgComponent } from "../common/components/SvgComponent/SvgComponents";
 import myMoney from "../assets/image/MyMoney.jpg";
+import cards from "../assets/image/cards.png";
 
 export const Projects = () => {
     const projects = [
         {
             name: "Social network",
-            description: "Flux patterns; React/Redux/TS, Class and Func components",
+            description: "Flux patterns | React | Redux | TS | HOCs | Class and Function components",
             ghPages: "https://alik-avizha.github.io/my_social_network",
             url: "https://github.com/alik-avizha/my_social_network",
             projectStyle: { backgroundImage: `url(${socialNetworkImage})` },
@@ -19,7 +20,7 @@ export const Projects = () => {
         {
             name: "Todo list",
             description:
-                "SPA – React/Redux-toolkit/TS. Storybook, hooks, HOCs, REST API, axios. Unit, integration tests",
+                "SPA – React | Redux-Toolkit | TS |  Storybook |  Hooks | HOCs |  REST API | Axios | Unit and Integration tests",
             ghPages: "https://alik-avizha.github.io/Happy-Life-Checklist",
             url: "https://github.com/alik-avizha/Happy-Life-Checklist",
             projectStyle: { backgroundImage: `url(${todoImage})` },
@@ -27,17 +28,17 @@ export const Projects = () => {
         {
             name: "My money",
             description:
-                "Handy application for family budgeting – TypeScript | React | Redux Toolkit | React-Router-Dom | Styled-components | Chart.js ",
+                "Handy application for family budgeting – TypeScript | React | Redux Toolkit | React-Router-Dom | Styled-components | Chart.js",
             ghPages: "Тут будет ссылка",
             url: "https://github.com/shinkar94/myMoney2",
             projectStyle: { backgroundImage: `url(${myMoney})` },
         },
         {
             name: "Cards",
-            description: "Тут будет описание",
+            description: "TypeScript | React | RTK Query | Storybook | React-Hook-Form | Axios | Radix",
             ghPages: "тут будет ссылка",
             url: "https://github.com/alik-avizha/Learning-Cards",
-            projectStyle: { backgroundImage: `url(${todoImage})` },
+            projectStyle: { backgroundImage: `url(${cards})` },
         },
     ];
 
