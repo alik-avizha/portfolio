@@ -5,6 +5,7 @@ import { Title } from "../common/components/title/Title";
 import socialNetworkImage from "../assets/image/socialNetwork.png";
 import todoImage from "../assets/image/todoList.jpeg";
 import { SvgComponent } from "../common/components/SvgComponent/SvgComponents";
+import myMoney from "../assets/image/MyMoney.jpg";
 
 export const Projects = () => {
     const projects = [
@@ -19,8 +20,23 @@ export const Projects = () => {
             name: "Todo list",
             description:
                 "SPA – React/Redux-toolkit/TS. Storybook, hooks, HOCs, REST API, axios. Unit, integration tests",
-            ghPages: "Тут будет ссылка",
+            ghPages: "https://alik-avizha.github.io/Happy-Life-Checklist",
             url: "https://github.com/alik-avizha/Happy-Life-Checklist",
+            projectStyle: { backgroundImage: `url(${todoImage})` },
+        },
+        {
+            name: "My money",
+            description:
+                "Handy application for family budgeting – TypeScript | React | Redux Toolkit | React-Router-Dom | Styled-components | Chart.js ",
+            ghPages: "Тут будет ссылка",
+            url: "https://github.com/shinkar94/myMoney2",
+            projectStyle: { backgroundImage: `url(${myMoney})` },
+        },
+        {
+            name: "Cards",
+            description: "Тут будет описание",
+            ghPages: "тут будет ссылка",
+            url: "https://github.com/alik-avizha/Learning-Cards",
             projectStyle: { backgroundImage: `url(${todoImage})` },
         },
     ];
