@@ -7,7 +7,7 @@ import githubIcon from "../assets/image/github.svg";
 
 export const Footer = () => {
     const contacts = [
-        { contactStyle: { backgroundImage: `url(${telegramIcon})` }, url: "https://t.me/+375336139895" },
+        { contactStyle: { backgroundImage: `url(${telegramIcon})` }, url: "https://t.me/alik_avi" },
         {
             contactStyle: { backgroundImage: `url(${linkedinIcon})` },
             url: "https://www.linkedin.com/in/aleksandr-avizha",
