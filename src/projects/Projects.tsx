@@ -27,8 +27,7 @@ export const Projects = () => {
         },
         {
             name: "My money",
-            description:
-                "Handy application for family budgeting – TypeScript | React | Redux Toolkit | React-Router-Dom | Styled-components | Chart.js",
+            description: "TypeScript | React | Redux Toolkit | React-Router-Dom | Styled-components | Chart.js",
             ghPages: "Тут будет ссылка",
             url: "https://github.com/shinkar94/myMoney2",
             projectStyle: { backgroundImage: `url(${myMoney})` },
