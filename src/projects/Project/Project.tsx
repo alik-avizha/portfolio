@@ -25,7 +25,7 @@ export const Project = (props: ProjectPropsType) => {
             </div>
             <div className={style.description}>
                 <a href={props.url} className={style.name} target="_blank" rel="noreferrer">
-                    {props.title}
+                    {props.title} | Github
                 </a>
                 <span className={style.category}>{props.description}</span>
             </div>

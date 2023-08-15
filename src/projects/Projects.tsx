@@ -3,7 +3,7 @@ import style from "./Projects.module.scss";
 import { Project } from "./Project/Project";
 import { Title } from "../common/components/title/Title";
 import socialNetworkImage from "../assets/image/socialNetwork.png";
-import todoImage from "../assets/image/todoList.jpeg";
+import todoImage from "../assets/image/todolist.png";
 import { SvgComponent } from "../common/components/SvgComponent/SvgComponents";
 import myMoney from "../assets/image/MyMoney.jpg";
 import cards from "../assets/image/cards.png";
@@ -16,6 +16,13 @@ export const Projects = () => {
             ghPages: "https://alik-avizha.github.io/my_social_network",
             url: "https://github.com/alik-avizha/my_social_network",
             projectStyle: { backgroundImage: `url(${socialNetworkImage})` },
+        },
+        {
+            name: "Cards",
+            description: "TypeScript | React | RTK Query | Storybook | React-Hook-Form | Axios | Radix",
+            ghPages: "https://learning-cards-qesnfbe8d-alik-avizha.vercel.app/",
+            url: "https://github.com/alik-avizha/Learning-Cards",
+            projectStyle: { backgroundImage: `url(${cards})` },
         },
         {
             name: "Todo list",
@@ -31,13 +38,6 @@ export const Projects = () => {
             ghPages: "Тут будет ссылка",
             url: "https://github.com/shinkar94/myMoney2",
             projectStyle: { backgroundImage: `url(${myMoney})` },
-        },
-        {
-            name: "Cards",
-            description: "TypeScript | React | RTK Query | Storybook | React-Hook-Form | Axios | Radix",
-            ghPages: "тут будет ссылка",
-            url: "https://github.com/alik-avizha/Learning-Cards",
-            projectStyle: { backgroundImage: `url(${cards})` },
         },
     ];
 

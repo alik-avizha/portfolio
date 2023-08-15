@@ -14,7 +14,7 @@ export const Contacts = () => {
         handleSubmit,
         formState: { errors },
         reset,
-    } = useForm<FormDataType>({ mode: "onTouched" });
+    } = useForm<FormDataType>({ mode: "onSubmit" });
 
     const onSubmit: SubmitHandler<FormDataType> = (data) => {
         axios
