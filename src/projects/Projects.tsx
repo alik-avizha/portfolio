@@ -1,12 +1,12 @@
 import React from "react";
 import style from "./Projects.module.scss";
-import { Project } from "./Project/Project";
 import { Title } from "../common/components/title/Title";
 import socialNetworkImage from "../assets/image/socialNetwork.png";
 import todoImage from "../assets/image/todolist.png";
 import { SvgComponent } from "../common/components/SvgComponent/SvgComponents";
 import myMoney from "../assets/image/MyMoney.jpg";
 import cards from "../assets/image/cards.png";
+import { Project } from "./Project/Project";
 
 export const Projects = () => {
     const projects = [
@@ -20,7 +20,7 @@ export const Projects = () => {
         {
             name: "Cards",
             description: "TypeScript | React | RTK Query | Storybook | React-Hook-Form | Axios | Radix",
-            ghPages: "https://learning-cards-qesnfbe8d-alik-avizha.vercel.app/",
+            ghPages: "https://learning-cards-97i1crhuy-alik-avizha.vercel.app/",
             url: "https://github.com/alik-avizha/Learning-Cards",
             projectStyle: { backgroundImage: `url(${cards})` },
         },

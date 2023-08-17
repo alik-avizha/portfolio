@@ -29,23 +29,6 @@
         transition: background-color 0.3s linear, transform 0.3s linear;
         &:hover {
             transform: scale(1.1);
-            &::after {
-                content: "Click to view";
-                position: absolute;
-                bottom: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-size: 20px;
-                color: white;
-                transition: opacity 0.2s linear;
-                opacity: 0;
-            }
-            &::before {
-                opacity: 0.4;
-            }
-            &:hover::after {
-                opacity: 1;
-            }
         }
         &::before {
             content: "";
@@ -66,22 +49,36 @@
         padding: 15px;
         background-color: #333;
         border-radius: 0 0 20px 20px;
-        a {
-            text-decoration: none;
-            margin-bottom: 10px;
-        }
-        .name {
-            display: block;
+        display: flex;
+        flex-direction: column;
+
+        .title {
             font-weight: 600;
+            margin: 0 0 10px 0;
+            text-align: center;
             @include text((Oswald, sans-serif), 20px, 1.2, $hColor);
-            cursor: pointer;
-            transition: color 0.2s linear;
-            &:hover {
-                color: orange;
-            }
         }
+
         .category {
             @include text((Heebo, sans-serif), 16px, 1.2, $textColor);
+            text-align: start;
+            margin-bottom: 10px;
+        }
+
+        .links {
+            display: flex;
+            gap: 20px;
+
+            a {
+                @include text((Oswald, sans-serif), 18px, 1.1, $hColor);
+                text-decoration: none;
+                cursor: pointer;
+                transition: color 0.2s linear;
+
+                &:hover {
+                    color: $Default;
+                }
+            }
         }
     }
 }

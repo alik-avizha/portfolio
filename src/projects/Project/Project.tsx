@@ -24,10 +24,16 @@ export const Project = (props: ProjectPropsType) => {
                 ></a>
             </div>
             <div className={style.description}>
-                <a href={props.url} className={style.name} target="_blank" rel="noreferrer">
-                    {props.title} | Github
-                </a>
+                <h3 className={style.title}>{props.title}</h3>
                 <span className={style.category}>{props.description}</span>
+                <div className={style.links}>
+                    <a href={props.ghPages} target="_blank" rel="noreferrer">
+                        DEMO
+                    </a>
+                    <a href={props.url} target="_blank" rel="noreferrer">
+                        CODE
+                    </a>
+                </div>
             </div>
         </div>
     );
