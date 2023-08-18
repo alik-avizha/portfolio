@@ -8,13 +8,13 @@ export const Nav = () => {
             <Link to="main" activeClass={style.active} spy={true} smooth={true} offset={-70} duration={500}>
                 Main
             </Link>
-            <Link to="skills" activeClass={style.active} spy={true} smooth={true} offset={-70} duration={500}>
+            <Link to="skills" activeClass={style.active} spy={true} smooth={true} offset={-55} duration={500}>
                 Skills
             </Link>
-            <Link to="projects" activeClass={style.active} spy={true} smooth={true} offset={-70} duration={500}>
+            <Link to="projects" activeClass={style.active} spy={true} smooth={true} offset={-45} duration={500}>
                 Projects
             </Link>
-            <Link to="contacts" activeClass={style.active} spy={true} smooth={true} offset={-70} duration={500}>
+            <Link to="contacts" activeClass={style.active} spy={true} smooth={true} offset={-39} duration={500}>
                 Contacts
             </Link>
         </div>

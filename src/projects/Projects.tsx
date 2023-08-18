@@ -20,7 +20,7 @@ export const Projects = () => {
         {
             name: "Cards",
             description: "TypeScript | React | RTK Query | Storybook | React-Hook-Form | Axios | Radix",
-            ghPages: "https://learning-cards-97i1crhuy-alik-avizha.vercel.app/",
+            ghPages: "https://flaskcards-project.vercel.app",
             url: "https://github.com/alik-avizha/Learning-Cards",
             projectStyle: { backgroundImage: `url(${cards})` },
         },
@@ -35,7 +35,7 @@ export const Projects = () => {
         {
             name: "My money",
             description: "TypeScript | React | Redux Toolkit | React-Router-Dom | Styled-components | Chart.js",
-            ghPages: "Тут будет ссылка",
+            ghPages: "https://github.com/shinkar94/myMoney2",
             url: "https://github.com/shinkar94/myMoney2",
             projectStyle: { backgroundImage: `url(${myMoney})` },
         },
