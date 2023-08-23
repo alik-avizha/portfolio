@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import style from "./BurgerNav.module.scss";
 import { Link } from "react-scroll";
-import burger from "../../assets/image/burger.svg";
+import { SvgSelector } from "../../common/components/svgSelector/SvgSelector";
 
 export const BurgerNav = () => {
     const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -27,7 +27,7 @@ export const BurgerNav = () => {
                 </Link>
             </div>
             <div className={style.burgerBtn} onClick={onBurgerBtnClick}>
-                <img src={burger} alt="burger" />
+                <SvgSelector svgName={"Burger"} />
             </div>
         </div>
     );

@@ -3,7 +3,7 @@ import style from "./Projects.module.scss";
 import { Title } from "../common/components/title/Title";
 import socialNetworkImage from "../assets/image/socialNetwork.png";
 import todoImage from "../assets/image/todolist.png";
-import { SvgComponent } from "../common/components/SvgComponent/SvgComponents";
+import { SvgComponent } from "../common/components/svgComponent/SvgComponents";
 import myMoney from "../assets/image/MyMoney.jpg";
 import cards from "../assets/image/cards.png";
 import { Project } from "./Project/Project";

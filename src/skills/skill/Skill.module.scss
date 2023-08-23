@@ -1,4 +1,5 @@
 @import "../../common/styles/sass/mixins";
+@import "../../common/styles/sass/variables";
 
 .skill {
     width: 200px;
@@ -20,9 +21,14 @@
         .icon {
             width: 50px;
             height: 50px;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            svg:hover {
+                fill: #666;
+                cursor: pointer;
+
+                @media (max-width: 480px) {
+                    fill: $Default;
+                }
+            }
         }
         .circle {
             position: absolute;

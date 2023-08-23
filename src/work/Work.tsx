@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Work.module.scss";
 import { Title } from "../common/components/title/Title";
-import { SvgComponent } from "../common/components/SvgComponent/SvgComponents";
+import { SvgComponent } from "../common/components/svgComponent/SvgComponents";
 import { Link } from "react-scroll";
 
 const Work = () => {

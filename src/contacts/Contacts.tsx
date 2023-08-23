@@ -2,7 +2,7 @@ import React from "react";
 import style from "./Contacts.module.scss";
 import { Title } from "../common/components/title/Title";
 import { Fade } from "react-awesome-reveal";
-import { SvgComponent } from "../common/components/SvgComponent/SvgComponents";
+import { SvgComponent } from "../common/components/svgComponent/SvgComponents";
 import { MyContact } from "./myContact/MyContact";
 import { SubmitHandler, useForm } from "react-hook-form";
 import axios from "axios";

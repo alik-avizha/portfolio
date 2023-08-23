@@ -78,6 +78,10 @@
                 &:hover {
                     color: $Default;
                 }
+
+                @media (max-width: 480px) {
+                    color: $Default;
+                }
             }
         }
     }

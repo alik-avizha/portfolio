@@ -1,19 +1,17 @@
 import React from "react";
 import style from "./Footer.module.scss";
-import telegramIcon from "../assets/image/telegram.svg";
-import linkedinIcon from "../assets/image/linkedin.svg";
-import instagramIcon from "../assets/image/instagram.svg";
-import githubIcon from "../assets/image/github.svg";
+import { LinksNameType, SvgSelector } from "../common/components/svgSelector/SvgSelector";
 
+type ContactType = {
+    svg: LinksNameType;
+    url: string;
+};
 export const Footer = () => {
-    const contacts = [
-        { contactStyle: { backgroundImage: `url(${telegramIcon})` }, url: "https://t.me/alik_avi" },
-        {
-            contactStyle: { backgroundImage: `url(${linkedinIcon})` },
-            url: "https://www.linkedin.com/in/aleksandr-avizha",
-        },
-        { contactStyle: { backgroundImage: `url(${instagramIcon})` }, url: "https://www.instagram.com/alik.avi" },
-        { contactStyle: { backgroundImage: `url(${githubIcon})` }, url: "https://github.com/alik-avizha" },
+    const contacts: ContactType[] = [
+        { svg: `TELEGRAM`, url: "https://t.me/alik_avi" },
+        { svg: `LINKEDIN`, url: "https://www.linkedin.com/in/aleksandr-avizha" },
+        { svg: `INSTAGRAM`, url: "https://www.instagram.com/alik.avi" },
+        { svg: `GITHUB`, url: "https://github.com/alik-avizha" },
     ];
 
     return (
@@ -26,11 +24,12 @@ export const Footer = () => {
                             <a
                                 key={index}
                                 href={el.url}
-                                style={el.contactStyle}
                                 className={style.footerContact}
                                 target="_blank"
                                 rel="noreferrer"
-                            ></a>
+                            >
+                                <SvgSelector svgName={el.svg} />
+                            </a>
                         );
                     })}
                 </div>

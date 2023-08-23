@@ -5,7 +5,7 @@ import { ParticlesWrapper } from "../common/components/particles/Particle";
 import { Fade } from "react-awesome-reveal";
 import ReactTypingEffect from "react-typing-effect";
 import { Tilt } from "react-tilt";
-import { SvgComponent } from "../common/components/SvgComponent/SvgComponents";
+import { SvgComponent } from "../common/components/svgComponent/SvgComponents";
 
 export const Main = () => {
     const photo = {
