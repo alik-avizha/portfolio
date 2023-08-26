@@ -30,7 +30,7 @@ export const Contacts = () => {
 
     return (
         <div id="contacts" className={style.contactsBlock}>
-            <Fade direction={"left"}>
+            <Fade direction={"left"} delay={300} triggerOnce={true}>
                 <div className={style.container}>
                     <Title text={"Contacts"} />
                     <div className={style.contactsContainer}>

@@ -1,11 +1,11 @@
 import React from "react";
 import style from "./Projects.module.scss";
 import { Title } from "../common/components/title/Title";
-import socialNetworkImage from "../assets/image/socialNetwork.png";
-import todoImage from "../assets/image/todolist.png";
+import socialNetworkImage from "../assets/image/sn.png";
+import todoImage from "../assets/image/todo.png";
 import { SvgComponent } from "../common/components/svgComponent/SvgComponents";
-import myMoney from "../assets/image/MyMoney.jpg";
-import cards from "../assets/image/cards.png";
+import myMoney from "../assets/image/spend-wise.png";
+import cards from "../assets/image/lc.png";
 import { Project } from "./Project/Project";
 
 export const Projects = () => {
@@ -33,10 +33,11 @@ export const Projects = () => {
             projectStyle: { backgroundImage: `url(${todoImage})` },
         },
         {
-            name: "My money",
-            description: "TypeScript | React | Redux Toolkit | React-Router-Dom | Styled-components | Chart.js",
-            ghPages: "https://github.com/shinkar94/myMoney2",
-            url: "https://github.com/shinkar94/myMoney2",
+            name: "Spend wise",
+            description:
+                "Team project | Git flow | Next.js | TS | Redux Toolkit | React-Router-Dom | Styled-components | Chart.js",
+            ghPages: "https://spend-wise-3c47w0yqh-shinkar94.vercel.app",
+            url: "https://github.com/shinkar94/spend_wise",
             projectStyle: { backgroundImage: `url(${myMoney})` },
         },
     ];

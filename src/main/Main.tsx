@@ -19,7 +19,7 @@ export const Main = () => {
             </div>
             <div className={style.container}>
                 <div className={style.text}>
-                    <Fade direction={"top-left"}>
+                    <Fade direction={"top-left"} delay={300} triggerOnce={true}>
                         <h4 className={style.title}>I am Aleksandr Avizha</h4>
                         <ReactTypingEffect text={["Frontend Developer"]} className={style.myJob} />
                     </Fade>
