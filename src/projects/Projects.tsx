@@ -12,22 +12,23 @@ export const Projects = () => {
     const projects = [
         {
             name: "Social network",
-            description: "Flux patterns | React | Redux | TS | HOCs | Class and Function components",
+            description: "Flux patterns | React | Redux | TypeScript | HOCs | Class and Function components",
             ghPages: "https://alik-avizha.github.io/my_social_network",
             url: "https://github.com/alik-avizha/my_social_network",
             projectStyle: { backgroundImage: `url(${socialNetworkImage})` },
         },
         {
             name: "Cards",
-            description: "TypeScript | React | RTK Query | Storybook | React-Hook-Form | Axios | Radix",
+            description:
+                "TypeScript | React | Redux Toolkit Query | Storybook | React-Hook-Form | Axios | Radix | i18next | Framer-motion",
             ghPages: "https://flaskcards-project.vercel.app",
             url: "https://github.com/alik-avizha/Learning-Cards",
             projectStyle: { backgroundImage: `url(${cards})` },
         },
         {
-            name: "Todo list",
+            name: "Todolist",
             description:
-                "SPA – React | Redux-Toolkit | TS |  Storybook |  Hooks | HOCs |  REST API | Axios | Unit and Integration tests",
+                "SPA – React | Redux-Toolkit | TypeScript |  Storybook |  Hooks | HOCs |  REST API | Axios | Unit and Integration tests",
             ghPages: "https://alik-avizha.github.io/Happy-Life-Checklist",
             url: "https://github.com/alik-avizha/Happy-Life-Checklist",
             projectStyle: { backgroundImage: `url(${todoImage})` },
@@ -35,7 +36,7 @@ export const Projects = () => {
         {
             name: "Spend wise",
             description:
-                "Team project | Git flow | Next.js | TS | Redux Toolkit | React-Router-Dom | Styled-components | Chart.js",
+                "Next.js | Team project | Git flow | TypeScript | Redux Toolkit | Styled-components | Chart.js",
             ghPages: "https://spend-wise-3c47w0yqh-shinkar94.vercel.app",
             url: "https://github.com/shinkar94/spend_wise",
             projectStyle: { backgroundImage: `url(${myMoney})` },

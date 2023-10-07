@@ -14,6 +14,11 @@ type SkillsType = {
 export const Skills = () => {
     const skills: SkillsType[] = [
         {
+            title: "JavaScript",
+            svg: `JS`,
+            description: "Promises, Eventloop, this, Closures, Recursion, Prototypes, Scope",
+        },
+        {
             title: "React",
             svg: `REACT`,
             description: "Hooks, Class components, React-router-dom v6",
@@ -27,11 +32,6 @@ export const Skills = () => {
             title: "Typescript",
             svg: `TS`,
             description: "Primitive types, Objects, Generics, Union types",
-        },
-        {
-            title: "JS",
-            svg: `JS`,
-            description: "Promises, Eventloop, this, Closures, Recursion, Prototypes, Scope",
         },
         {
             title: "Storybook",
