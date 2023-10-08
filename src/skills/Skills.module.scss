@@ -12,13 +12,9 @@
         .skills {
             width: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             flex-wrap: wrap;
             gap: 20px;
-
-            @media screen and (max-width: 1128px) {
-                justify-content: center;
-            }
         }
     }
 }

@@ -12,7 +12,8 @@ export const Projects = () => {
     const projects = [
         {
             name: "Social network",
-            description: "Flux patterns | React | Redux | TypeScript | HOCs | Class and Function components",
+            description:
+                "Flux patterns | React | Redux | TypeScript | HOCs | Class and Function components | Redux Form | Material UI",
             ghPages: "https://alik-avizha.github.io/my_social_network",
             url: "https://github.com/alik-avizha/my_social_network",
             projectStyle: { backgroundImage: `url(${socialNetworkImage})` },
@@ -36,7 +37,7 @@ export const Projects = () => {
         {
             name: "Spend wise",
             description:
-                "Next.js | Team project | Git flow | TypeScript | Redux Toolkit | Styled-components | Chart.js",
+                "Next.js | Team project | Git flow | TypeScript | Redux Toolkit | Styled-components | Chart.js | Next-auth | Zod",
             ghPages: "https://spend-wise-3c47w0yqh-shinkar94.vercel.app",
             url: "https://github.com/shinkar94/spend_wise",
             projectStyle: { backgroundImage: `url(${myMoney})` },

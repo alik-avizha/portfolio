@@ -15,14 +15,10 @@
         .projects {
             width: 100%;
             display: flex;
-            justify-content: space-between;
-            gap: 60px;
+            justify-content: center;
+            gap: 40px;
             flex-wrap: wrap;
             align-items: flex-start;
-
-            @media screen and (max-width: 1445px) {
-                justify-content: center;
-            }
         }
     }
 }
