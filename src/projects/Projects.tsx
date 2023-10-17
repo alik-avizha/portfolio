@@ -1,66 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./Projects.module.scss";
 import { Title } from "../common/components/title/Title";
-import socialNetworkImage from "../assets/image/sn.png";
-import todoImage from "../assets/image/todo.png";
 import { SvgComponent } from "../common/components/svgComponent/SvgComponents";
-import myMoney from "../assets/image/spend-wise.png";
-import cards from "../assets/image/lc.png";
+import { setDocumentScroll } from "../common/utils/set-document-scroll";
+import { AnimatePresence } from "framer-motion";
+import { ProjectPopup } from "./project-popup/ProjectPopup";
 import { Project } from "./Project/Project";
+import { projects } from "../common/data/projects/projects-data";
 
 export const Projects = () => {
-    const projects = [
-        {
-            name: "Social network",
-            description:
-                "Flux patterns | React | Redux | TypeScript | HOCs | Class and Function components | Redux Form | Material UI",
-            ghPages: "https://alik-avizha.github.io/my_social_network",
-            url: "https://github.com/alik-avizha/my_social_network",
-            projectStyle: { backgroundImage: `url(${socialNetworkImage})` },
-        },
-        {
-            name: "Cards",
-            description:
-                "TypeScript | React | Redux Toolkit Query | Storybook | React-Hook-Form | Axios | Radix | i18next | Framer-motion",
-            ghPages: "https://flaskcards-project.vercel.app",
-            url: "https://github.com/alik-avizha/Learning-Cards",
-            projectStyle: { backgroundImage: `url(${cards})` },
-        },
-        {
-            name: "Todolist",
-            description:
-                "SPA – React | Redux-Toolkit | TypeScript |  Storybook |  Hooks | HOCs |  REST API | Axios | Unit and Integration tests",
-            ghPages: "https://alik-avizha.github.io/Happy-Life-Checklist",
-            url: "https://github.com/alik-avizha/Happy-Life-Checklist",
-            projectStyle: { backgroundImage: `url(${todoImage})` },
-        },
-        {
-            name: "Spend wise",
-            description:
-                "Next.js | Team project | Git flow | TypeScript | Redux Toolkit | Styled-components | Chart.js | Next-auth | Zod",
-            ghPages: "https://spend-wise-3c47w0yqh-shinkar94.vercel.app",
-            url: "https://github.com/shinkar94/spend_wise",
-            projectStyle: { backgroundImage: `url(${myMoney})` },
-        },
-    ];
+    const [selectedId, setSelectedId] = useState<string>("");
+    const handleOpenPopup = (id: string) => {
+        setDocumentScroll(false);
+        setSelectedId(id);
+    };
+    const handleClosePopup = () => {
+        setDocumentScroll(true);
+        setSelectedId("");
+    };
+    const item = projects.find((item) => item.id === selectedId) || projects[0];
 
     return (
         <div id="projects" className={style.projectsBlock}>
             <div className={style.projectsContainer}>
                 <Title text={"My Projects"} />
                 <div className={style.projects}>
-                    {projects.map((el, index) => {
-                        return (
-                            <Project
-                                key={index}
-                                style={el.projectStyle}
-                                title={el.name}
-                                description={el.description}
-                                ghPages={el.ghPages}
-                                url={el.url}
-                            />
-                        );
-                    })}
+                    {projects.map((item, index) => (
+                        <Project index={index} key={item.id} handleOpen={handleOpenPopup} project={item} />
+                    ))}
+                    <AnimatePresence>
+                        {selectedId && (
+                            <ProjectPopup project={item} selectedId={selectedId} closePopup={handleClosePopup} />
+                        )}
+                    </AnimatePresence>
                 </div>
             </div>
             <SvgComponent fill={"202020FF"} />

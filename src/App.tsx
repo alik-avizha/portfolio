@@ -9,18 +9,24 @@ import { Contacts } from "./contacts/Contacts";
 import { Footer } from "./footer/Footer";
 import { GlobalToast } from "./common/components/Toast/Toast";
 import "react-toastify/dist/ReactToastify.css";
+import { usePageLoadedState } from "./common/utils/usePageLoadedState";
+import { AppLoader } from "./common/components/appLoader/AppLoader";
 
 function App() {
+    const [isLoaded] = usePageLoadedState();
+
     return (
         <div className="App">
-            <Header />
-            <Main />
-            <Skills />
-            <Projects />
-            <Work />
-            <Contacts />
-            <Footer />
-            <GlobalToast />
+            <AppLoader isLoaded={isLoaded}>
+                <Header />
+                <Main />
+                <Skills />
+                <Projects />
+                <Work />
+                <Contacts />
+                <Footer />
+                <GlobalToast />
+            </AppLoader>
         </div>
     );
 }

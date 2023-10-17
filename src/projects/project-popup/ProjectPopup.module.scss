@@ -1,0 +1,167 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.overlay {
+    z-index: 1;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    will-change: opacity;
+    top: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(10px);
+
+    .popupContent {
+        margin: 80px 20px 20px 20px;
+        padding: 40px;
+        border-radius: 6px;
+        background-color: #202020;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 14px;
+        height: calc(100% - 80px);
+        max-width: 840px;
+        overflow-y: auto;
+        outline: 5px solid $bgSecondColor;
+        position: relative;
+
+        .close {
+            font-size: 2rem;
+            color: $hColor;
+            background-color: transparent;
+            cursor: pointer;
+            border: none;
+            position: absolute;
+            top: 14px;
+            right: 22px;
+            transition: ease 0.2s;
+
+            &:hover {
+                background-color: transparent;
+                color: $Default;
+                transform: scale(1.2);
+                box-shadow: none;
+            }
+        }
+
+        .projectTitle {
+            @include text((Oswald, sans-serif), 2.5rem, 1.2, $hColor);
+            margin: 0;
+            align-self: flex-start;
+        }
+
+        .description {
+            text-align: justify;
+            @include text((Heebo, sans-serif), 16px, 1.2, $textColor);
+            margin: 0;
+        }
+
+        .infoBlock {
+            margin: 10px 0;
+            width: 100%;
+            background-color: $bgColor;
+            border-radius: 6px;
+            padding: 10px 20px;
+
+            .container {
+                width: 100%;
+                max-width: 400px;
+                min-height: 100px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                & div {
+                    padding: 6px;
+                    display: flex;
+                    flex-direction: column;
+
+                    & h5 {
+                        margin: 0;
+                        font-weight: 400;
+                        @include text((Heebo, sans-serif), 16px, 1.2, $hColor);
+                    }
+
+                    & p {
+                        margin: 0;
+                        color: $textColor;
+                    }
+
+                    & p,
+                    a {
+                        display: inline-block;
+                        line-height: 1.5rem;
+                    }
+                    & a {
+                        color: #5095bf;
+                        transition: ease 0.2s;
+
+                        &:hover {
+                            transform: translateX(3px);
+                        }
+                    }
+                }
+            }
+        }
+
+        .imageContainer {
+            flex: 0.8;
+            border-radius: 6px;
+            width: 100%;
+            height: auto;
+
+            .image {
+                border-radius: 6px;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+
+        .storyBlockTitle {
+            padding: 0 20px;
+            margin: 0;
+            @include text((Oswald, sans-serif), 2rem, 1.2, $hColor);
+            align-self: flex-start;
+        }
+
+        .storyBlock {
+            border-radius: 6px;
+            padding: 20px 20px;
+            width: 100%;
+            background-color: $bgColor;
+            min-height: min-content;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 14px;
+
+            .text {
+                flex: 1.2;
+
+                & p {
+                    margin: 0;
+                    color: $textColor;
+                    white-space: pre-line;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .overlay {
+        z-index: 100000;
+    }
+    .popupContent {
+        margin: 20px 20px 65px 20px;
+        padding: 20px;
+    }
+}
