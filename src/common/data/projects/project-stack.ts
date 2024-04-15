@@ -20,6 +20,8 @@ import jenkins from "../../../assets/icons/jenkins.svg";
 import jira from "../../../assets/icons/jira.svg";
 import confluence from "../../../assets/icons/confluence.svg";
 import socket from "../../../assets/icons/socket-io.svg";
+import stripe from "../../../assets/icons/stripe.svg";
+import paypal from "../../../assets/icons/paypal.svg";
 
 export type StackTitle = (typeof projectStack)[number]["title"];
 
@@ -50,5 +52,6 @@ export const projectStack = [
     { title: "Jira" as const, img: jira },
     { title: "Confluence" as const, img: confluence },
     { title: "Socket.IO" as const, img: socket },
+    { title: "Stripe" as const, img: stripe },
+    { title: "Paypal" as const, img: paypal },
 ];
-//Next.js, Jira, Confluence, React-Query, Apollo, GraphQL, Socket.IO, Kubernetes, Jenkins,  React hook form, Storybook

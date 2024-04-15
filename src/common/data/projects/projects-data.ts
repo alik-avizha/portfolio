@@ -15,6 +15,8 @@ export type ProjectType = {
     final: string;
     githubLink: string;
     deployLink: string;
+    githubSecondLink?: string;
+    deploySecondLink?: string;
     coverLogo: string;
     descriptionShort: string;
     descriptionLong: string;
@@ -24,6 +26,59 @@ export type ProjectType = {
 export const projects: ProjectType[] = [
     {
         id: "1",
+        title: "Inctagram (on development stage)",
+        projectType: "Educational internship",
+        goals:
+            "It is a platform for posting photos (a kind of Instagram).\n" +
+            "The platform allows users to post photos to their feed, subscribe to other users' pages, buy a paid account, leave comments, give likes and exchange private messages",
+        stack:
+            "To enhance the project's functionality and maintainability, a robust stack of technologies was employed:\n" +
+            " Typescript: Leveraged for static typing, enhancing code clarity and catching errors early in development.\n" +
+            "Next.js: Utilized for server-side rendering and routing, optimizing performance and SEO.\n" +
+            "Redux Toolkit: Employed for efficient state management, providing a centralized store for application data.\n" +
+            "Apollo: Integrated for GraphQL client-side queries and mutations, facilitating data fetching and manipulation.\n" +
+            "GraphQL: Implemented for querying and manipulating data from the server, ensuring efficient data transfer between client and server.\n" +
+            "Kubernetes: Deployed for container orchestration, enabling scalability and efficient management of containerized applications.\n" +
+            "Jenkins: Utilized for continuous integration and continuous deployment (CI/CD), automating the build and deployment processes.\n" +
+            "Socket.IO: Integrated for real-time bidirectional communication between client and server, facilitating live updates and notifications.\n" +
+            "React-hook-form: Employed for managing and validating form input in React components, enhancing user experience and data integrity.\n" +
+            "Stripe: Integrated for secure online payment processing, enabling seamless transactions within the application.\n" +
+            "Paypal: Utilized as an alternative payment processing solution, offering flexibility and convenience for users.",
+        problems:
+            "On the project, the following main issues arose:\n" +
+            "\n" +
+            "Photo editor development: I had to tackle complex tasks in developing a functional and user-friendly photo editor. This included ensuring smooth operation with images of different sizes and formats, as well as implementing various editing tools.\n" +
+            "\n" +
+            "Working with new technologies such as Docker, Jenkins, GraphQL: I had to familiarize myself with new technologies such as Docker, Jenkins, and GraphQL. This required additional time for learning and implementation, especially if I had no prior experience with them. There were challenges in configuring and integrating these technologies into the existing project infrastructure.",
+        final: "From my experience on the project, I've gained valuable insights and skills. Working successfully within a team environment, I've learned numerous new technologies. I encountered challenges in developing functionalities, but overcoming these hurdles has significantly contributed to my growth as a developer. Overall, I've expanded my knowledge base and become more proficient in various aspects of software development.",
+        githubLink: "https://github.com/sonyhero/project-inctagram",
+        githubSecondLink: "https://github.com/sonyhero/admin-project-inctagram",
+        deployLink: "https://project-inctagram.vercel.app",
+        deploySecondLink: "https://admin-project-inctagram.vercel.app",
+        coverLogo: incatgram,
+        projectStack: [
+            "Typescript",
+            "Next.js",
+            "Redux Toolkit",
+            "Apollo",
+            "GraphQL",
+            "Kubernetes",
+            "Jenkins",
+            "Jira",
+            "Confluence",
+            "Socket.IO",
+            "React-hook-form",
+            "Stripe",
+            "Paypal",
+        ],
+        descriptionShort:
+            "The platform allows users to post photos to their feed, subscribe to other users' pages, buy a paid account, leave comments, give likes and exchange private messages",
+        descriptionLong:
+            "The platform allows users to post photos to their feed, subscribe to other users' pages, buy a paid account, leave comments, give likes and exchange private messages",
+        color: "#06d6a0",
+    },
+    {
+        id: "2",
         title: "Cards",
         projectType: "Learning Project",
         goals:
@@ -50,7 +105,7 @@ export const projects: ProjectType[] = [
         color: "#8c61ff",
     },
     {
-        id: "2",
+        id: "3",
         title: "Social network",
         projectType: "Learning Project",
         goals: "The main goal of this project was to master React, including working with class components, higher-order components (e.g. connect), component lifecycle management, implementing routing and the classic state management approach using Redux.",
@@ -70,7 +125,7 @@ export const projects: ProjectType[] = [
     },
 
     {
-        id: "3",
+        id: "4",
         title: "Todolist",
         projectType: "Learning Project",
         goals: "Built using React framework, Material UI library and Redux. The project is a robust and stable web application. Unit tests and screenshot tests have been implemented to ensure quality and reliability. The application offers a wide range of functionality including authentication, CRUD operations to manage task lists and tasks. Unit tests and screenshot tests play a key role in ensuring that the implemented features work correctly and in preventing visual regression issues, making them an integral part of frontend projects.",
@@ -96,37 +151,5 @@ export const projects: ProjectType[] = [
         descriptionLong:
             "Todolist is a simple and easy-to-use task management app to help you organise your day. It allows you to create a to-do list, helping you to be more organised and efficient.",
         color: "#9dafa9",
-    },
-    {
-        id: "4",
-        title: "Inctagram (on development stage)",
-        projectType: "Educational internship",
-        goals:
-            "It is a platform for posting photos (a kind of Instagram).\n" +
-            "The platform allows users to post photos to their feed, subscribe to other users' pages, buy a paid account, leave comments, give likes and exchange private messages",
-        stack: "on development stage",
-        problems: "on development stage",
-        final: "on development stage",
-        githubLink: "https://github.com/sonyhero/project-inctagram",
-        deployLink: "https://inctag.ru/",
-        coverLogo: incatgram,
-        projectStack: [
-            "Typescript",
-            "Next.js",
-            "Redux Toolkit",
-            "Apollo",
-            "GraphQL",
-            "Kubernetes",
-            "Jenkins",
-            "Jira",
-            "Confluence",
-            "Socket.IO",
-            "React-hook-form",
-        ],
-        descriptionShort:
-            "The platform allows users to post photos to their feed, subscribe to other users' pages, buy a paid account, leave comments, give likes and exchange private messages",
-        descriptionLong:
-            "The platform allows users to post photos to their feed, subscribe to other users' pages, buy a paid account, leave comments, give likes and exchange private messages",
-        color: "#06d6a0",
     },
 ];

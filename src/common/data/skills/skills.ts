@@ -18,10 +18,16 @@ export const skills: SkillsType[] = [
         description: "Hooks, Class components, React-router-dom v6",
     },
     {
+        title: "Next.js",
+        svg: `NEXT_JS`,
+        description: "Client and Server Rendering",
+    },
+    {
         title: "Redux",
         svg: `REDUX`,
         description: "Reducers, Thunks, Store Structure, Redux Toolkit, RTK Query",
     },
+
     {
         title: "Typescript",
         svg: `TS`,
@@ -53,8 +59,13 @@ export const skills: SkillsType[] = [
         description: "Responsive & adaptive design. Flexbox, grid, positioning",
     },
     {
-        title: "Git",
-        svg: `GIT`,
-        description: "Semantic commits, all basic operations & resolving merge conflicts",
+        title: "Payment systems",
+        svg: `PAYMENT`,
+        description: "Working with payment systems Stripe and Paypal",
+    },
+    {
+        title: "GraphQL",
+        svg: `GRAPHQL`,
+        description: "GraphQl API, Apollo Client, GraphQl Subscriptions, Codegen",
     },
 ];

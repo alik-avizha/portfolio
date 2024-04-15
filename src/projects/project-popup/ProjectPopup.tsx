@@ -73,11 +73,21 @@ export const ProjectPopup = ({ closePopup, selectedId, project, children }: Proj
                             <div>
                                 <h5>Links</h5>
                                 <a target={"_blank"} href={project.githubLink} rel="noreferrer">
-                                    Github
+                                    Github {project.githubSecondLink && "Main"}
                                 </a>
+                                {project.githubSecondLink && (
+                                    <a target={"_blank"} href={project.githubSecondLink} rel="noreferrer">
+                                        Github (Admin)
+                                    </a>
+                                )}
                                 <a target={"_blank"} href={project.deployLink} rel="noreferrer">
-                                    Deployment
+                                    Deployment {project.deploySecondLink && "Main"}
                                 </a>
+                                {project.deploySecondLink && (
+                                    <a target={"_blank"} href={project.deploySecondLink} rel="noreferrer">
+                                        Deployment (Admin)
+                                    </a>
+                                )}
                             </div>
                         </div>
                     </div>
