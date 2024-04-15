@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d49b467c.css",
-    "main.js": "/portfolio/static/js/main.c0bae476.js",
+    "main.js": "/portfolio/static/js/main.7ffa39d0.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/inctag.png": "/portfolio/static/media/inctag.22b9be3eea89b8da649a.png",
     "static/media/sn.png": "/portfolio/static/media/sn.12489710336f1a4a4cb4.png",
@@ -18,7 +18,9 @@
     "static/media/next.svg": "/portfolio/static/media/next.b0cd4ec7d66b9048682c2d58d2a4008b.svg",
     "static/media/react-hook-form.svg": "/portfolio/static/media/react-hook-form.2203d20558b4ef3898c2d447810b9047.svg",
     "static/media/redux.svg": "/portfolio/static/media/redux.0e4fb1c819ac4c060c92343147d4ccf7.svg",
+    "static/media/paypal.svg": "/portfolio/static/media/paypal.f24dfbde2425957ef496b287dc57d577.svg",
     "static/media/typescript.svg": "/portfolio/static/media/typescript.9ad81d2e09b9cd2265cdb1e55d83a709.svg",
+    "static/media/stripe.svg": "/portfolio/static/media/stripe.1222938232380db6f1823d7c878cfa75.svg",
     "static/media/jira.svg": "/portfolio/static/media/jira.bc708c35af52a798f6e1ad827cce6673.svg",
     "static/media/confluence.svg": "/portfolio/static/media/confluence.0cb2aeaa285103140f288a2d57c9d19b.svg",
     "index.html": "/portfolio/index.html",
@@ -32,11 +34,11 @@
     "static/media/material.svg": "/portfolio/static/media/material.fd510ed8518b192069590b04e2e6348a.svg",
     "static/media/framer-motion.svg": "/portfolio/static/media/framer-motion.cd0e8acf350dd639e9e8c999f8539a5e.svg",
     "main.d49b467c.css.map": "/portfolio/static/css/main.d49b467c.css.map",
-    "main.c0bae476.js.map": "/portfolio/static/js/main.c0bae476.js.map",
+    "main.7ffa39d0.js.map": "/portfolio/static/js/main.7ffa39d0.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d49b467c.css",
-    "static/js/main.c0bae476.js"
+    "static/js/main.7ffa39d0.js"
   ]
 }
